@@ -1,4 +1,4 @@
-zihao wang's Research Website: [click to view](http://zhenkewu.com)
+zihao wang's Research Website: [click to view](http://drzihao.wang)
 
 # Notes
 
