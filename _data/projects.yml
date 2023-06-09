@@ -54,7 +54,7 @@
   title: baker
   owner: zihaowang
   description: Bayesian Analysis Kit for Etiology Research
-  url: http://zihaowang.com/baker
+  url: http://drzihao.wang/baker
   contributors:
   - login: zihaowang
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50
@@ -99,7 +99,7 @@
   owner: zihaowang
   description: Subset Profiling and Organizing Tools for Gel Electrophoresis  Autoradiography
     in R
-  url: http://zihaowang.com/spotgear
+  url: http://drzihao.wang/spotgear
   contributors:
   - login: zihaowang
     avatar: https://avatars1.githubusercontent.com/u/4580992?v=3&s=50

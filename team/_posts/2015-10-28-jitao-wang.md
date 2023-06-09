@@ -12,7 +12,7 @@ image: /assets/images/team/jitao-wang.png
 cv: 
 alum: false
 collaborator: false                               
-web: zihaowang.com/team/jitao-wang
+web: drzihao.wang/team/jitao-wang
 field: biostat
 ---
 

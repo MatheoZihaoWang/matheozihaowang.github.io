@@ -7,7 +7,7 @@ author:
 - "Seminar Course: *Visualization for Individualized Health*\\"
 - "Johns Hopkins University\\"
 - "\\"
-- "[http://zihaowang.com](http://zihaowang.com)"
+- "[http://drzihao.wang](http://drzihao.wang)"
 - "\\"
 - "Figures and R code from online"
 
