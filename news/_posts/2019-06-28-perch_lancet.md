@@ -11,7 +11,7 @@ tags:
 ---
 
 
-The Main PERCH paper appeared in [The *Lancet*](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)30721-4/fulltext) today. We developed novel integrative Bayesian methods [here](http://onlinelibrary.wiley.com/doi/10.1111/rssc.12101/full), [here](https://academic.oup.com/biostatistics/article/18/2/200/2555349/Nested-partially-latent-class-models-for-dependent), [here](https://academic.oup.com/cid/article/64/suppl_3/S213/3858226/Bayesian-Estimation-of-Pneumonia-Etiology), and more recently, [here](https://zhenkewu.com/papers/nplcm_reg). Also check out the open-source R pacakge [`baker`](https://github.com/zhenkewu/baker).
+The Main PERCH paper appeared in [The *Lancet*](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)30721-4/fulltext) today. We developed novel integrative Bayesian methods [here](http://onlinelibrary.wiley.com/doi/10.1111/rssc.12101/full), [here](https://academic.oup.com/biostatistics/article/18/2/200/2555349/Nested-partially-latent-class-models-for-dependent), [here](https://academic.oup.com/cid/article/64/suppl_3/S213/3858226/Bayesian-Estimation-of-Pneumonia-Etiology), and more recently, [here](https://zihaowang.com/papers/nplcm_reg). Also check out the open-source R pacakge [`baker`](https://github.com/zihaowang/baker).
 
 The visualization of PERCH results can be found [here](http://perchresults.org).
 

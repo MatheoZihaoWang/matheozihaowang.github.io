@@ -10,7 +10,7 @@ pdf: /assets/pdfs/papers/wu-2018-bayesian_rlcm.pdf
 slides: /assets/pdfs/slides/bayesian_rlcm_web.pdf
 supplement:  /assets/pdfs/papers/wu-2018-bayesian_rlcm_supp.pdf
 poster: /assets/pdfs/posters/SAMSI_poster_2018Aug14.pdf
-github: https://github.com/zhenkewu/rewind
+github: https://github.com/zihaowang/rewind
 doi: doi:10.1111/biom.13388
 external_link: https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13388
 video_link: 

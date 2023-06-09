@@ -573,7 +573,7 @@ g
 
 # fit bayesian dewarping model:
 Date             <- gsub("-", "_", Sys.Date())
-result_folder    <- file.path("/Users/zhenkewu/Dropbox/ZW/professional/=research_agenda/collaborative/Scleroderma/protein-electrophoresis/phenotyped_gel",paste0("dewarp_",paste(analysis_id,collapse="_")))
+result_folder    <- file.path("/Users/zihaowang/Dropbox/ZW/professional/=research_agenda/collaborative/Scleroderma/protein-electrophoresis/phenotyped_gel",paste0("dewarp_",paste(analysis_id,collapse="_")))
 dir.create(result_folder)
 
 # All document names:
@@ -607,7 +607,7 @@ gs <- dewarp2d_machine(dat_for_dewarp,mcmc_options,analysis_pmscl_ind)
 # Posterior sample analyses:
 #
 DIR_DEWARP <- result_folder
-#DIR_DEWARP <- "/Users/zhenkewu/Downloads/gel_bayes_spotgear/dewarp_all/2000 result jags"
+#DIR_DEWARP <- "/Users/zihaowang/Downloads/gel_bayes_spotgear/dewarp_all/2000 result jags"
 
 out_dewarp <- read_dewarp_folder(DIR_DEWARP)
 bugs.dat   <- out_dewarp$bugs.dat

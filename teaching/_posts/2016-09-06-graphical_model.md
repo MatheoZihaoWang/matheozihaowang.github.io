@@ -16,8 +16,8 @@ tags:
 # Statistical and Computational Methods for Learning through Graphical Models
 ------
 
-* **Instructor**: [zihao wang](http://zhenkewu.com) PhD, Assistant Professor of Biostatistics
-* **Email**: zhenkewu@umich.edu
+* **Instructor**: [zihao wang](http://zihaowang.com) PhD, Assistant Professor of Biostatistics
+* **Email**: zihaowang@umich.edu
 * **Time**: Tuesday and Thursday 12:30-2pm (15 weeks; September 6th to December 13th, 2016)
 * **Location**: 4332 SPH II
 * **Office Hours**: {{ site.department.office }}; Tuesdays 2-3pm or by appointment

@@ -30,10 +30,10 @@ categories:
 [[Publications]](/papers/) [[Contact]](/team/zihao-wang) [[Bio]](/team/zihao-wang) [[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=A_zik4EAAAAJ&hl=en) 
 
 
-[//]: # ([[CV-overleaf]]&#40;https://www.overleaf.com/read/dbktqfjxccbv&#41; [[CV-pdf]]&#40;assets/pdfs/team/zhenkewu_cv.pdf&#41;)
-[//]: # ([[GitHub<i class="fa fa-github"></i>]]&#40;https://github.com/zhenkewu?tab=activity&#41; [[Twitter<i class="fa fa-twitter"></i>]]&#40;https://twitter.com/ZhenkeWu&#41;.)
+[//]: # ([[CV-overleaf]]&#40;https://www.overleaf.com/read/dbktqfjxccbv&#41; [[CV-pdf]]&#40;assets/pdfs/team/zihaowang_cv.pdf&#41;)
+[//]: # ([[GitHub<i class="fa fa-github"></i>]]&#40;https://github.com/zihaowang?tab=activity&#41; [[Twitter<i class="fa fa-twitter"></i>]]&#40;https://twitter.com/zihaowang&#41;.)
 
-The best way to contact me is email. Direction to my office is [here](assets/pdfs/team/zhenkewu-office.pdf).
+[//]: # (The best way to contact me is email. Direction to my office is [here]&#40;assets/pdfs/team/zihaowang-office.pdf&#41;.)
 
 
 <hr/>

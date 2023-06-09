@@ -23,7 +23,7 @@ Based on the programming language R, OSLER-inHealth starts with 2 inter-operable
 
 # Annoucements
 ------
-* [09/08/2017] [baker](https://github.com/zhenkewu/baker) and [spotgear](https://github.com/zhenkewu/spotgear) are up for testing.
+* [09/08/2017] [baker](https://github.com/zihaowang/baker) and [spotgear](https://github.com/zihaowang/spotgear) are up for testing.
 
 
 # Background

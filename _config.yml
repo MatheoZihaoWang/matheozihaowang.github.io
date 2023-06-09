@@ -22,30 +22,28 @@ markdown: kramdown
 #
 title : zihao wang, PhD
 tagline: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
-url: http://zhenkewu.com
+url: http://zihaowang.com
 name : zihao wang, PhD
 description: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
 
 
 institution:
-  url: https://www.umich.edu
-  name: University of Michigan
+  url: https://www.harvard.edu
+  name: Harvard University
 department:
-  url: https://sph.umich.edu/biostat/
-  name: Department of Biostatistics
-  address: 1415 Washington Heights 
-  office: 4626 SPH-I (within Suite 4600)
-  city: Ann Arbor, MI 48109
-  logo: /assets/images/umich-sph-logo.png
-  map-image: /assets/images/umich-sph-map.png
-  map: http://goo.gl/HXM9Pi
-  workphone: +1-734-764-7067
+  url: https://martinos.org/
+  name: A.A. Martinos Center for Biomedical Imaging
+  address: 149 Thirteenth Street,
+  office: 2301
+  city: Boston, MA 02129
+  logo: /assets/images/martinos-sph-logo.png
+  map-image: /assets/images/nmr-center-map.gif
+  map: https://goo.gl/maps/Hj2SWwh9Adrii1Wu9
+  workphone: +1-617-286-2425
 author :
   name : zihao wang
-  email : zhenkewu@gmail.com
-  github : zhenkewu
-  twitter : ZhenkeWu
-  uri: http://zhenkewu.com
+  email : zihao.wang[@]ieee.org
+  uri: http://drzihao.wang
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -56,7 +54,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://zhenkewu.com
+production_url : http://drzihao.wang
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -221,7 +219,7 @@ exclude:
   - "Gemfile.lock"
 
 projects:
-  - zhenkewu/baker
-  - zhenkewu/mpcr
-  - zhenkewu/spotgear
+  - zihaowang/baker
+  - zihaowang/mpcr
+  - zihaowang/spotgear
   - oslerinhealth

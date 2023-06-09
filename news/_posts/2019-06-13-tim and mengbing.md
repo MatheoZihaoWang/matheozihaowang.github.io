@@ -9,7 +9,7 @@ tags:
   - students
 ---
 
-Huge congrats to Tim for having successfully [defended his thesis](https://twitter.com/ZhenkeWu/status/1121485296208613376) on sequential randomized trials motivated by mental health and online education problems! 
+Huge congrats to Tim for having successfully [defended his thesis](https://twitter.com/zihaowang/status/1121485296208613376) on sequential randomized trials motivated by mental health and online education problems! 
 
 Another huge congrats to Mengbing for finishing her MS degree in biostatistics!
 
