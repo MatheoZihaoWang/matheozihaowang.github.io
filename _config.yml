@@ -54,7 +54,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://drzihao.wang
+production_url : https://drzihao.wang
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -218,8 +218,8 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 
-projects:
-  - zihaowang/baker
-  - zihaowang/mpcr
-  - zihaowang/spotgear
-  - oslerinhealth
+#projects:
+#  - zihaowang/baker
+#  - zihaowang/mpcr
+#  - zihaowang/spotgear
+#  - oslerinhealth
