@@ -22,22 +22,35 @@ navorder: 4
 <div class="smalltitle text-left">Research Group Members </div>
 <div class="bigspacer"></div>
 
-I'm extremely fortunate to work with several amazing students to whom I serve as primary or co-advisor. <br>
+I'm extremely fortunate to work with amazing colleagues. <br>
 
 <div class="bigspacer"></div>
-<div class="row">
-    {% for member in site.categories.team %}
-    {% if member.alum == false and member.collaborator == false %}
-    <div class="col-sm-3" style="text-align: center">
-    {%if member.url%}
-    <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>
-    <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  
-    <p class="note">{{ member.position }}</p>
-    </div>
-    {%endif%}
-    {%endif%}
-    {% endfor %}   
-</div>
+
+[//]: # (<div class="row">)
+
+[//]: # (    {% for member in site.categories.team %})
+
+[//]: # (    {% if member.alum == false and member.collaborator == false %})
+
+[//]: # (    <div class="col-sm-3" style="text-align: center">)
+
+[//]: # (    {%if member.url%})
+
+[//]: # (    <a href="{{ member.url }}"> <img class="photo" src="{{member.image}}"> </a> <br>)
+
+[//]: # (    <div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>  )
+
+[//]: # (    <p class="note">{{ member.position }}</p>)
+
+[//]: # (    </div>)
+
+[//]: # (    {%endif%})
+
+[//]: # (    {%endif%})
+
+[//]: # (    {% endfor %}   )
+
+[//]: # (</div>)
 
 <div class="bigspacer"></div>
 
