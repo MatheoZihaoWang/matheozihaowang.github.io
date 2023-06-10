@@ -4,7 +4,7 @@ title: "Contact"
 navtab: "Contact"
 description: "Contact"
 group: navigation
-navorder: 5
+navorder: 4
 ---
 {% include JB/setup %}
 
