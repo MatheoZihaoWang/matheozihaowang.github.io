@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "Automated Left Atrial Segmentation in Cardiac Images Using Dual 3D U-Net and Contour Loss"
 image: /assets/images/papers/la_segmentation.png
 authors: Shuman Jia, Antoine Despinasse, Zihao Wang, Hervé Delingette, Xavier Pennec, Pierre Jaïs, Hubert Cochet, Maxime Sermesant
