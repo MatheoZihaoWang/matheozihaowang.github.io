@@ -37,7 +37,7 @@ categories:
 
 
 <hr/>
-I am a [Research Fellow](https://connects.catalyst.harvard.edu/Profiles/display/Person/204180) in the [Athinoula A. Martinos Center for Biomedical Imaging](https://www.nmr.mgh.harvard.edu/research) at [Harvard University](https://www.harvard.edu/), with joint appointment as [Postdoctoral Fellow] in [Mass General Research Institute at Massachusetts General Hospital](https://www.massgeneral.org/research/about/overview-of-the-research-institute). 
+I am a [Research Fellow](https://connects.catalyst.harvard.edu/Profiles/display/Person/204180) in the [Athinoula A. Martinos Center for Biomedical Imaging](https://www.nmr.mgh.harvard.edu/research) at [Harvard University](https://www.harvard.edu/), with joint appointment as [Postdoctoral Fellow](https://ccni.mgh.harvard.edu/ccni/people/zihao-wang.html) in [Mass General Research Institute at Massachusetts General Hospital](https://www.massgeneral.org/research/about/overview-of-the-research-institute). 
 
 <hr/>
 
@@ -54,17 +54,17 @@ My research involves developing principled machine learning algorithms for medic
 [//]: # (- *Substantive*: Precision medicine; Wearable device data; Mobile health; Infectious diseases; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research; Computational Social Science.)
 
 
-<!-- Currently a major focus of my work is on the analysis of multiple mixed-type longitudinal measurements with feedbacks in treatment assignments. I am working on hierarchical Bayesian methods to infer latent trajectories that represent individual disease progressions that have direct applications to childhood pneumonia etiology studies, analyses of electronic health records and claims data, and just-in-time adaptive interventions (JITAI) in mobile health (mHealth) studies. -->
+<!-- Currently a major focus of my work is on the BSDE's applications in score-matching-based generative learning, as well as its downstream applications in healthcare. -->
 
 
 <hr/>
 
 <!-- **Postdoc Openning**
 
-- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health](https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit)** -->
+[//]: # (- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health]&#40;https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit&#41;** -->)
 
 
-[//]: # (**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [say hi]&#40;/sayhi/&#41;. )
+[//]: # (**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [contact]&#40;/sayhi/&#41;. )
 
 
 [//]: # (*Check this out and send me an email if interested in collaborating!*)

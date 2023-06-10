@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "say hi"
+title: "Contact"
 navtab: "Contact"
 description: "Contact"
 group: navigation
