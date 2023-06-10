@@ -139,7 +139,7 @@ My research involves developing principled machine learning algorithms for medic
 	
 	<div class="col-md-4">
 		<div class="head">
-			<a class="off" href="/papers/">Recent Papers
+			<a class="off" href="/Research/">Recent Papers
 			</a>
 		</div>
 		<div class="bigspacer"></div>
