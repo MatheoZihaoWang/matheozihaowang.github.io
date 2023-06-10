@@ -27,7 +27,7 @@ categories:
 [//]: # ([ 王子豪 <i class="fa fa-soundcloud"></i>]&#40;https://soundcloud.com/zihao-wang/zihao-wang-name&#41;.)
 
 
-[[Publications]](/papers/) [[Contact]](/team/zihao-wang) [[Bio]](/team/zihao-wang) [[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=A_zik4EAAAAJ&hl=en) 
+[[Publications]](/Research/) [[Contact]](/team/zihao-wang) [[Bio]](/team/zihao-wang) [[Google Scholar<i class="ai ai-google-scholar"></i>]](https://scholar.google.com/citations?user=A_zik4EAAAAJ&hl=en) 
 
 
 [//]: # ([[CV-overleaf]]&#40;https://www.overleaf.com/read/dbktqfjxccbv&#41; [[CV-pdf]]&#40;assets/pdfs/team/zihaowang_cv.pdf&#41;)
