@@ -21,10 +21,10 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Zihao Wang, PhD
-tagline: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
+tagline: Research updates on Statistical Learning, Medical Image Computing from A. A. Martinos Center for Biomedical Imaging @ MGB and Harvard University
 url: http://drzihao.wang
 name : zihao wang, PhD
-description: Research updates on Bayesian modelling, causal models and individualized health from Johns Hopkins Biostatistics
+description: Research updates on Statistical Learning, Medical Image Computing from A. A. Martinos Center for Biomedical Imaging @ MGB and Harvard University
 
 
 institution:
@@ -218,8 +218,8 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 
-#projects:
-#  - zihaowang/baker
-#  - zihaowang/mpcr
-#  - zihaowang/spotgear
-#  - oslerinhealth
+projects:
+  - zihaowang/baker
+  - zihaowang/mpcr
+  - zihaowang/spotgear
+  - oslerinhealth

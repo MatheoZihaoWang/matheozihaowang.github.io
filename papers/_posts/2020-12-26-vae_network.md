@@ -12,7 +12,7 @@ supplement:
 github: 
 doi: 
 external_link: https://arxiv.org/pdf/2009.01675.pdf
-type: substantive
+type: statistical
 ---
 
 ## Abstract
