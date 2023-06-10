@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "say hi"
-navtab: "say hi"
-description: "Say Hi"
+navtab: "Contact"
+description: "Contact"
 group: navigation
 navorder: 5
 ---
