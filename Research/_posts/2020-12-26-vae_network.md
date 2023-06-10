@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "Quasi-Symplectic Langevin Variational Autoencoder"
 image: /assets/images/papers/LVAE.png
 authors: Zihao WANG, Hervé Delingette

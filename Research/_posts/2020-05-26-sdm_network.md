@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "A Deep Learning based Fast Signed Distance Map Generation"
 image: /assets/images/papers/fast_signed_distance_map.png
 authors: Zihao WANG, Clair Vandersteen, Thomas Demarcy, Dan Gnansia, Charles Raﬀaelli, Nicolas Guevara, Hervé Delingette

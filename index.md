@@ -53,15 +53,11 @@ My research involves developing principled machine learning algorithms for medic
 [//]: # ()
 [//]: # (- *Substantive*: Precision medicine; Wearable device data; Mobile health; Infectious diseases; Mental health; Electronic health records/claims data; Healthcare policy; Clinical trials; Just-in-time adaptive interventions for behaviorial and psychiatric research; Computational Social Science.)
 
-
-<!-- Currently a major focus of my work is on the BSDE's applications in score-matching-based generative learning, as well as its downstream applications in healthcare. -->
-
-
 <hr/>
 
 <!-- **Postdoc Openning**
 
-[//]: # (- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health]&#40;https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit&#41;** -->)
+[//]: # (- **[Rolling Reviews: Postdoc Position on Statistical Methods to Individualize Care for Mental Health]&#40;https://docs.google.com/document/d/1Eq8VmqvYrF2Fqo5UxzjZbKQpJPnbZWxJTRYbL-6J19I/edit&#41;** -->
 
 
 [//]: # (**Advising**: We are recruiting motivated and hard-working people interested in Bayesian methods and computation, graphical models, causal inference, sequential decision making, reinforcement learning and large-scale health data analytics. If you want to get involved, please [contact]&#40;/sayhi/&#41;. )

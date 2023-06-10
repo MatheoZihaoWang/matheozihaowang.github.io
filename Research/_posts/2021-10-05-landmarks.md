@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "One-shot Learning Landmarks Detection"
 image: /assets/images/papers/one_shot_learning.png
 authors: Zihao Wang, Clair Vandersteen, Charles Raffaelli, Nicolas Guevara, François Patou, Hervé Delingette

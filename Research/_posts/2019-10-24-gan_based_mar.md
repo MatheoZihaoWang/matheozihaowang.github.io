@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "Deep Learning based Metal Artifacts Reduction in post-operative Cochlear Implant CT Imaging"
 image: /assets/images/papers/metal_artifacts_reduction.png
 authors: Zihao Wang, Clair Vandersteen, Thomas Demarcy, Dan Gnansia, Charles Raffaelli, Nicolas Guevara, Hervé Delingette

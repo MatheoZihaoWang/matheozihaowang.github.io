@@ -1,5 +1,6 @@
 ---
 layout: paper
+category: papers
 title: "Attention for Image Registration (AiR): an unsupervised Transformer approach"
 image: /assets/images/papers/air_transformer.png
 authors: Zihao Wang, Hervé Delingette
