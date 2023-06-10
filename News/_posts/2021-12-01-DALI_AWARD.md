@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Few shot learning in computer vision"
+title: "Research Award"
 description: ""
 author: "zihao wang"
 author_handle: "zihao wang"
