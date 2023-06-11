@@ -3,7 +3,7 @@ layout: paper
 category: papers
 title: "Patch-based Registration with Pure MLP and Transformer"
 image: /assets/images/papers/patch_based_registration.png
-authors: Zihao Wang, Yutong Yang, Shuman Jia, Hervé Delingette, Nicholas Ayache, Xavier Pennec
+authors: Zihao Wang, Yingyu Yang, Maxime Sermesant, Herve Delingette
 year: 2023
 shortref: Wang et al. (2023). ArXiv.
 journal: "ArXiv."

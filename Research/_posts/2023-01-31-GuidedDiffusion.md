@@ -3,7 +3,7 @@ layout: paper
 category: papers
 title: "Cross-Modal Image Translation Using Diﬀusion Models"
 image: /assets/images/papers/cross_modal_translation.png
-authors: Zihao Wang, Shuman Jia, Antoine Despinasse, Hervé Delingette, Xavier Pennec, Pierre Jaïs, Hubert Cochet, Maxime Sermesant
+authors: Zihao Wang, Yingyu Yang, Yuzhou Chen, Tingting Yuan, Maxime Sermesant, Hervé Delingette, Ona Wu
 year: 2023
 shortref: Wang et al. (2023). ArXiv.
 journal: "ArXiv."
