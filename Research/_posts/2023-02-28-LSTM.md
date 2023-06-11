@@ -1,0 +1,44 @@
+---
+layout: paper
+title: "Long Short-Term Memory Neural Equalizer"
+image: /assets/images/papers/neural_equalizer.png
+authors: Zihao Wang, Zhifei Xu, Jiayi He, Hervé Delingette, Jun Fan
+year: 2020
+shortref: Wang et al. (2020). HAL.
+journal: "HAL."
+pdf: "https://inria.hal.science/hal-03022865/file/Neuron_Equalizer__Copy_%20%282%29.pdf"
+slides: 
+supplement: 
+github: 
+doi: 
+external_link: "https://inria.hal.science/hal-03022865/file/Neuron_Equalizer__Copy_%20%282%29.pdf"
+type: substantive
+---
+
+# Abstract
+
+This paper presents a Long Short-Term Memory (LSTM) Neural Equalizer. The LSTM is integrated as a terminal in the system where the spoiled signal series from the transmission line are directly processed by the LSTM neural block. The feedback information is achieved by the long-short memories states. The LSTM neural equalizer shows significant improvement in the eye width, height, and jitter compared to the active Feed-Forward Equalizer and Decision Feedback Equalizer (FFE-DFE) approach.
+
+**Key Words**: LSTM, Neural Equalizer, Signal Processing, Feed-Forward Equalizer, Decision Feedback Equalizer
+
+**Main points**
+
+- Proposes a Long Short-Term Memory (LSTM) Neural Equalizer.
+
+- The LSTM is integrated as a terminal in the system.
+
+- Shows significant improvement in the eye width, height, and jitter compared to the active Feed-Forward Equalizer and Decision Feedback Equalizer (FFE-DFE) approach.
+
+**Citation**
+
+```
+@ARTICLE{10038624,
+  author={Wang, Zihao and Xu, Zhifei and He, Jiayi and Delingette, Hervé and Fan, Jun},
+  journal={IEEE Transactions on Signal and Power Integrity}, 
+  title={Long Short-Term Memory Neural Equalizer}, 
+  year={2023},
+  volume={2},
+  number={},
+  pages={13-22},
+  doi={10.1109/TSIPI.2023.3242855}}
+```
