@@ -1,44 +1,88 @@
 ---
 layout: default
 title: "projects"
-description: "Research projects from the lab"
-categories: 
+description: "Research projects"
+categories:
  - projects
 group: subnavigation
 navorder: 10
 ---
-
 {% include JB/setup %}
 
-<div class="bigspacer"></div>
+<div class="row" >
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note-button">
+				<li role="presentation" class="active">
+					<a class="off" href="/projects/">
+						<i class="fa fa-refresh fa-fw"></i> Timeline
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
 
-<div class="container">
-{% for project in site.data.projects %}
+<!--
+<div class="pager">
+	{% if paginator.previous_page %}
+		{% if paginator.previous_page == 1 %}
+		<a class="prev" href="/{{ page.category }}/">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</a>
+		{% else %}
+		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</a>
+		{% endif %}
+	{% endif %}
 
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 projectbox">
+	{% if paginator.next_page %}
+	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
+		<i class="fa fa-chevron-right fa-lg"></i>
+	</a>
+	{% endif %}
+
+</div>
+
+-->
+
+{% for post in site.categories.projects %}
+
+	{% for member in site.categories.team %}
+		{% if member.handle == post.author_handle %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+
+	<!-- <div class="bigspacer"></div> -->
+	<div class="row">
+		<div class="col-md-3">
 			<div class="head">
-				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
-			</div>	
-			<div class="smallspacer"></div>
-			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
 			</div>
 			<div class="smallspacer"></div>
-			<!-- <div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date_to_string }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">				
-				{{ project.commits.first.author_login }}
-				</a>
-			</div> -->
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
+			<div class="smallnote">
+				{{ post.date | date_to_string }}
+				{% if author %}
+				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				{% endif %}
+			</div>
 		</div>
-    {% cycle 'close rows': '', '', '</div>' %}
+		<div class="col-md-8">
+			<div style="height:5px;"></div>
+			{% if post.image %}
+			<a href="{{ post.url }}"><img class="offset" src="{{ post.image }}"></a>
+			{% endif %}
+			<div class="post">
+				{{ post.content }}
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
 {% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}	
-</div>
+
+
+
