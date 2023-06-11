@@ -218,8 +218,5 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 
-projects:
-  - zihaowang/baker
-  - zihaowang/mpcr
-  - zihaowang/spotgear
-  - oslerinhealth
+#projects:
+#  - zihaowang/mpcr
