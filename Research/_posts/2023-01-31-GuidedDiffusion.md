@@ -1,44 +1,44 @@
 ---
 layout: paper
-title: "Long Short-Term Memory Neural Equalizer"
-image: /assets/images/papers/neural_equalizer.png
-authors: Zihao Wang, Zhifei Xu, Jiayi He, Hervé Delingette, Jun Fan
-year: 2020
-shortref: Wang et al. (2020). HAL.
-journal: "HAL."
-pdf: "https://inria.hal.science/hal-03022865/file/Neuron_Equalizer__Copy_%20%282%29.pdf"
+category: papers
+title: "Cross-Modal Image Translation Using Diﬀusion Models"
+image: /assets/images/papers/cross_modal_translation.png
+authors: Zihao Wang, Shuman Jia, Antoine Despinasse, Hervé Delingette, Xavier Pennec, Pierre Jaïs, Hubert Cochet, Maxime Sermesant
+year: 2023
+shortref: Wang et al. (2023). ArXiv.
+journal: "ArXiv."
+pdf: "https://arxiv.org/pdf/2301.13743.pdf"
 slides: 
 supplement: 
 github: 
 doi: 
-external_link: "https://inria.hal.science/hal-03022865/file/Neuron_Equalizer__Copy_%20%282%29.pdf"
-type: substantive
+external_link: https://arxiv.org/pdf/2301.13743.pdf
+type: statistical
 ---
 
 # Abstract
 
-This paper presents a Long Short-Term Memory (LSTM) Neural Equalizer. The LSTM is integrated as a terminal in the system where the spoiled signal series from the transmission line are directly processed by the LSTM neural block. The feedback information is achieved by the long-short memories states. The LSTM neural equalizer shows significant improvement in the eye width, height, and jitter compared to the active Feed-Forward Equalizer and Decision Feedback Equalizer (FFE-DFE) approach.
+Cross-modal image translation is a challenging task due to the domain gap between different modalities. Recent works have shown the effectiveness of diﬀusion models in generating high-quality images. In this paper, we propose a novel cross-modal image translation method based on diﬀusion models, which can generate realistic images in the target modality from the source modality. We introduce a mutual information maximization loss to align the latent spaces of different modalities, which helps to preserve the content information during the translation. We also propose a novel training strategy to stabilize the training of the diﬀusion model. Experimental results on several datasets demonstrate the effectiveness of our method.
 
-**Key Words**: LSTM, Neural Equalizer, Signal Processing, Feed-Forward Equalizer, Decision Feedback Equalizer
+**Key Words**:  Cross-modal image translation, diﬀusion models, mutual information maximization, latent space alignment
 
 **Main points**
 
-- Proposes a Long Short-Term Memory (LSTM) Neural Equalizer.
+- Proposes a novel cross-modal image translation method based on diﬀusion models.
 
-- The LSTM is integrated as a terminal in the system.
+- Introduces a mutual information maximization loss to align the latent spaces of different modalities.
 
-- Shows significant improvement in the eye width, height, and jitter compared to the active Feed-Forward Equalizer and Decision Feedback Equalizer (FFE-DFE) approach.
+- Proposes a novel training strategy to stabilize the training of the diﬀusion model.
+
+- Demonstrates the effectiveness of the proposed method through experiments on several datasets.
 
 **Citation**
-
 ```
-@ARTICLE{10038624,
-  author={Wang, Zihao and Xu, Zhifei and He, Jiayi and Delingette, Hervé and Fan, Jun},
-  journal={IEEE Transactions on Signal and Power Integrity}, 
-  title={Long Short-Term Memory Neural Equalizer}, 
-  year={2023},
-  volume={2},
-  number={},
-  pages={13-22},
-  doi={10.1109/TSIPI.2023.3242855}}
+@article{Wang2023,
+title={Cross-Modal Image Translation Using Diﬀusion Models},
+author={Zihao Wang, Shuman Jia, Antoine Despinasse, Hervé Delingette, Xavier Pennec, Pierre Jaïs, Hubert Cochet, Maxime Sermesant},
+journal={ArXiv},
+year={2023},
+url={https://arxiv.org/pdf/2301.13743.pdf}
+}
 ```
