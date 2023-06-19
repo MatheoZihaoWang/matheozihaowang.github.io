@@ -36,7 +36,7 @@ Cross-modal image translation is a challenging task due to the domain gap betwee
 ```
 @article{Wang2023,
 title={Cross-Modal Image Translation Using Diﬀusion Models},
-author={Zihao Wang, Shuman Jia, Antoine Despinasse, Hervé Delingette, Xavier Pennec, Pierre Jaïs, Hubert Cochet, Maxime Sermesant},
+author={Zihao Wang, Yingyu Yang, Yuzhou Chen, Tingting Yuan, Maxime Sermesant, Herve Delingette, Ona Wu},
 journal={ArXiv},
 year={2023},
 url={https://arxiv.org/pdf/2301.13743.pdf}
