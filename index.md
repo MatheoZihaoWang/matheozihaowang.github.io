@@ -37,7 +37,8 @@ categories:
 
 
 <hr/>
-I am a [Research Fellow](https://connects.catalyst.harvard.edu/Profiles/display/Person/204180) in the [Athinoula A. Martinos Center for Biomedical Imaging](https://www.nmr.mgh.harvard.edu/research) at [Harvard University](https://www.harvard.edu/), with joint appointment as [Postdoctoral Fellow](https://ccni.mgh.harvard.edu/ccni/people/zihao-wang.html) in [Mass General Research Institute at Massachusetts General Hospital](https://www.massgeneral.org/research/about/overview-of-the-research-institute). 
+I am a [Research Fellow](https://connects.catalyst.harvard.edu/Profiles/display/Person/204180) in the [Athinoula A. Martinos Center for Biomedical Imaging](https://www.nmr.mgh.harvard.edu/research), and a [Postdoctoral Fellow] advised by Dr. Ona Wu (https://scholar.google.com/citations?user=qTYit7IAAAAJ&hl=en) at [Harvard University](https://ccni.mgh.harvard.edu/ccni/people/zihao-wang.html). 
+I received my Ph.D. in Computer Science at Inria, under the supervision of [Dr. Hervé Delingette](https://scholar.google.fr/citations?user=7xnkHM0AAAAJ&hl=en). 
 Before that, I hold positions at [Philips Healthcare](https://www.usa.philips.com/healthcare) and [GE Healthcare](https://www.gehealthcare.com/).
 <hr/>
 
