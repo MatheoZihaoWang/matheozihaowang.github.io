@@ -28,6 +28,7 @@ categories:
     <h2>Building principled learning systems for the real world.</h2>
     <p>My research develops stochastic generative models that connect rigorous mathematical foundations with high-impact applications. I am especially interested in constrained generation, inverse problems, decision making, and imaging systems where physical consistency and uncertainty matter.</p>
     <p>Before joining UTC, I was a Research Fellow at the Martinos Center. I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
+    <p>I lead <a class="text-link" href="https://laplace.center/">Laplace Lab</a>, an open research group for principled AI. Follow our work on <a class="text-link" href="https://github.com/LaplaceLab">GitHub</a>.</p>
   </div>
 </section>
 

@@ -81,6 +81,7 @@ a:hover, a:focus { color: $accent; }
 .bibliography li { counter-increment: reference; color: #3d5149; font-size: 15px; line-height: 1.66; margin: 0; padding: 13px 0 13px 37px; position: relative; border-top: 1px solid $line; }
 .bibliography li::before { color: $accent; content: "[" counter(reference) "]"; font-size: 12px; font-weight: 800; left: 0; position: absolute; top: 15px; }
 .bibliography a { color: $accent-dark; border-bottom: 1px solid rgba(23, 74, 49, .4); }
+.bibliography .paper-link { font-family: Inter, ui-sans-serif, sans-serif; font-size: 12px; font-weight: 800; margin-left: 5px; white-space: nowrap; }
 .publication-note { color: $muted; font-size: 15px; }
 
 .contact-grid h2 { font-family: Inter, ui-sans-serif, sans-serif; font-size: 17px; font-weight: 800; letter-spacing: -.02em; margin: 0 0 5px; }
