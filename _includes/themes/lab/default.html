@@ -15,7 +15,15 @@
   <body>
     <header class="site-header">
       <div class="site-shell nav-wrap">
+        {% assign is_home = false %}
+        {% for category in page.categories %}
+          {% if category == 'home' %}{% assign is_home = true %}{% endif %}
+        {% endfor %}
+        {% if is_home %}
+        <a class="site-mark site-mark--avatar" href="/" aria-label="Zihao Wang home"><img src="/assets/images/team/zihao-wang.jpg" alt="Zihao Wang"></a>
+        {% else %}
         <a class="site-mark" href="/" aria-label="Zihao Wang home">ZW<span>.</span></a>
+        {% endif %}
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="/">Home</a>

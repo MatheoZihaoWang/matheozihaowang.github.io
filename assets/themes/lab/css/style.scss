@@ -27,6 +27,8 @@ a:hover, a:focus { color: $accent; }
 .nav-wrap { height: 74px; display: flex; align-items: center; justify-content: space-between; }
 .site-mark { color: $ink; font-family: Georgia, serif; font-size: 25px; font-weight: 700; letter-spacing: -.08em; }
 .site-mark span { color: $accent; }
+.site-mark--avatar { display: block; height: 37px; width: 37px; }
+.site-mark--avatar img { border: 1px solid $line; border-radius: 50%; display: block; height: 100%; object-fit: cover; width: 100%; }
 .site-nav { display: flex; align-items: center; gap: 29px; font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .site-nav a { color: $ink; }
 .site-nav a:hover { color: $accent; }
