@@ -13,5 +13,5 @@ description: Contact Zihao Wang, PhD.
 
 <section class="contact-grid">
   <div><div class="section-kicker">University</div><h2>University of Tennessee at Chattanooga</h2><p>Computer Science and Engineering Department<br>735 Vine St.<br>Chattanooga, TN, USA</p></div>
-  <div><div class="section-kicker">Online</div><p><a class="text-link" href="https://laplace.center/">Laplace Lab →</a></p><p><a class="text-link" href="https://github.com/LaplaceLab">Laplace Lab GitHub →</a></p><p><a class="text-link" href="https://scholar.google.com/citations?user=A_zik4EAAAAJ&amp;hl=en">Google Scholar →</a></p><p><a class="text-link" href="https://github.com/MatheoZihaoWang">GitHub →</a></p></div>
+  <div><div class="section-kicker">Online</div><p><a class="text-link" href="https://laplace.center/">Laplace Lab →</a></p><p><a class="text-link" href="https://github.com/LaplaceLab">Laplace Lab GitHub →</a></p><p><a class="text-link" href="https://scholar.google.com/citations?user=A_zik4EAAAAJ&amp;hl=en">Google Scholar →</a></p></div>
 </section>
