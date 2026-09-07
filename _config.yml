@@ -21,29 +21,26 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Zihao Wang, PhD
-tagline: Research updates on Statistical Learning, Medical Image Computing from A. A. Martinos Center for Biomedical Imaging @ MGB and Harvard University
-url: http://drzihao.wang
-name : zihao wang, PhD
-description: Research updates on Statistical Learning, Medical Image Computing from A. A. Martinos Center for Biomedical Imaging @ MGB and Harvard University
+tagline: Stochastic generative modeling, inverse problems, and AI for science and healthcare
+url: https://drzihao.wang
+name : Zihao Wang, PhD
+description: Stochastic generative modeling, inverse problems, and AI for science and healthcare
 
 
 institution:
-  url: https://www.harvard.edu
-  name: Harvard University
+  url: https://www.utc.edu/
+  name: University of Tennessee at Chattanooga
 department:
-  url: https://martinos.org/
-  name: A.A. Martinos Center for Biomedical Imaging
-  address: 149 Thirteenth Street,
-  office: 2301
-  city: Boston, MA 02129
-  logo: /assets/images/martinos-sph-logo.png
-  map-image: /assets/images/nmr-center-map.gif
-  map: https://goo.gl/maps/Hj2SWwh9Adrii1Wu9
-  workphone: +1-617-286-2425
+  url: https://www.utc.edu/engineering-and-computer-science/computer-science-and-engineering
+  name: Computer Science and Engineering Department
+  address: 735 Vine Street
+  office:
+  city: Chattanooga, TN 37403
+  workphone: +1-423-425-4058
 author :
-  name : zihao wang
-  email : zihao.wang[@]ieee.org
-  uri: http://drzihao.wang
+  name : Zihao Wang
+  email : zihao.wang@ieee.org
+  uri: https://drzihao.wang
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
