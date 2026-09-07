@@ -8,7 +8,7 @@ description: Contact Zihao Wang, PhD.
   <div class="hero__eyebrow">Contact</div>
   <h1>Let’s build useful AI together.</h1>
   <p>For research, student advising, and collaborations in generative AI, medical imaging, and scientific computing:</p>
-  <p><a class="button button--primary" href="mailto:zihao.wang@ieee.org">zihao.wang@ieee.org</a></p>
+  <p><span class="button button--primary email-obfuscated">zihao [.] wang@ieee.org</span></p>
 </section>
 
 <section class="contact-grid">

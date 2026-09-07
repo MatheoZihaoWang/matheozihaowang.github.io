@@ -58,6 +58,6 @@ categories:
   <div class="section-content contact-copy">
     <h2>Interested in a research collaboration?</h2>
     <p>I welcome conversations with students, clinicians, researchers, and industry partners working at the intersection of generative AI, imaging, and decision systems.</p>
-    <p><a class="text-link" href="mailto:zihao.wang@ieee.org">zihao.wang@ieee.org</a> &nbsp;·&nbsp; <a class="text-link" href="https://scholar.google.com/citations?user=A_zik4EAAAAJ&amp;hl=en">Google Scholar</a></p>
+    <p><span class="email-obfuscated">zihao [.] wang@ieee.org</span> &nbsp;·&nbsp; <a class="text-link" href="https://scholar.google.com/citations?user=A_zik4EAAAAJ&amp;hl=en">Google Scholar</a></p>
   </div>
 </section>

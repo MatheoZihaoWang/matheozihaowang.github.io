@@ -62,6 +62,7 @@ a:hover, a:focus { color: $accent; }
 .section-content h2, .research-areas h2, .contact-grid h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(31px, 4vw, 47px); font-weight: 400; letter-spacing: -.045em; line-height: 1.06; margin: -6px 0 24px; }
 .about-copy p, .contact-copy p { color: #3d5149; font-size: 18px; line-height: 1.75; margin: 0 0 18px; }
 .text-link { color: $accent-dark; display: inline-block; font-size: 15px; font-weight: 800; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.email-obfuscated { cursor: default; }
 .publication-list { margin: -9px 0 30px; }
 .publication-item { display: grid; grid-template-columns: 72px 1fr; gap: 18px; padding: 23px 0; border-bottom: 1px solid $line; }
 .publication-year { color: $accent; font-size: 13px; font-weight: 800; padding-top: 4px; }
