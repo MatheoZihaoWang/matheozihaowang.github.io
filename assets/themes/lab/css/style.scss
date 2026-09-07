@@ -25,8 +25,8 @@ a:hover, a:focus { color: $accent; }
 .site-shell { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
 .site-header { border-bottom: 1px solid $line; background: rgba(251, 251, 247, .94); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); }
 .nav-wrap { height: 74px; display: flex; align-items: center; justify-content: space-between; }
-.site-mark { font-family: Georgia, serif; font-size: 25px; font-weight: 700; letter-spacing: -.08em; color: $ink; }
-.site-mark span { color: $accent; }
+.site-mark { display: block; height: 37px; width: 37px; }
+.site-mark img { border: 1px solid $line; border-radius: 50%; display: block; height: 100%; object-fit: cover; width: 100%; }
 .site-nav { display: flex; align-items: center; gap: 29px; font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .site-nav a { color: $ink; }
 .site-nav a:hover { color: $accent; }
@@ -34,14 +34,11 @@ a:hover, a:focus { color: $accent; }
 .nav-toggle { display: none; background: transparent; border: 0; color: $ink; font: inherit; font-weight: 600; padding: 8px 0; }
 
 .hero { padding: 118px 0 68px; max-width: 1000px; }
-.hero--with-photo { min-height: 420px; padding-right: 285px; position: relative; }
 .hero__eyebrow, .section-kicker { color: $accent; font-size: 12px; font-weight: 800; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
 .hero h1, .page-hero h1 { margin: 17px 0 28px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 7.3vw, 90px); font-weight: 400; letter-spacing: -.064em; line-height: .96; }
 .hero h1 span { color: $accent; font-style: italic; }
 .hero__lead { max-width: 745px; color: #3d5149; font-size: clamp(18px, 2.2vw, 23px); line-height: 1.52; }
 .hero__actions { display: flex; gap: 12px; margin-top: 34px; }
-.hero__portrait { border-radius: 50%; box-shadow: 0 18px 42px rgba(19, 37, 31, .16); height: 220px; overflow: hidden; position: absolute; right: 12px; top: 122px; width: 220px; }
-.hero__portrait img { height: 100%; object-fit: cover; width: 100%; }
 .button { display: inline-flex; align-items: center; gap: 14px; border: 1px solid $accent-dark; border-radius: 2px; font-size: 14px; font-weight: 700; line-height: 1; padding: 15px 19px; transition: background .18s, color .18s, transform .18s; }
 .button:hover { transform: translateY(-2px); }
 .button--primary { color: #fff; background: $accent-dark; }
@@ -105,11 +102,9 @@ a:hover, a:focus { color: $accent; }
   .site-nav { display: none; position: absolute; top: 64px; left: -16px; right: -16px; background: $paper; border-bottom: 1px solid $line; box-shadow: 0 13px 24px rgba(19, 37, 31, .08); padding: 15px 16px 21px; flex-direction: column; align-items: flex-start; gap: 14px; }
   .site-nav.is-open { display: flex; }
   .hero, .page-hero { padding: 73px 0 50px; }
-  .hero--with-photo { min-height: 0; padding-right: 0; }
   .hero h1, .page-hero h1 { font-size: clamp(46px, 13vw, 66px); }
   .hero__lead, .page-hero > p { font-size: 18px; }
   .hero__actions { flex-wrap: wrap; }
-  .hero__portrait { height: 135px; margin-top: 32px; position: static; width: 135px; }
   .signal-grid, .research-areas { grid-template-columns: 1fr; }
   .signal-card, .signal-card + .signal-card { border-bottom: 1px solid $line; border-right: 0; min-height: auto; padding: 25px 0; }
   .signal-card:last-child { border-bottom: 0; }
