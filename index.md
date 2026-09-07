@@ -37,11 +37,11 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a> <span class="pi-badge">Work as PI</span></h3><p>Zihao Wang · <em>ICML 2026</em></p></div>
+        <div><h3><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong> · <em>ICML 2026</em></p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a> <span class="pi-badge">Work as PI</span></h3><p>Zihao Wang, Yuzhou Chen, Shaogang Ren · <em>ICLR 2026</em></p></div>
+        <div><h3><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong>, Yuzhou Chen, Shaogang Ren · <em>ICLR 2026</em></p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2025</div>
