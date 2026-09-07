@@ -26,8 +26,8 @@ categories:
   <div class="section-kicker">About</div>
   <div class="section-content about-copy">
     <h2>Building principled learning systems for the real world.</h2>
-    <p>My research develops stochastic generative models that connect rigorous mathematical foundations with high-impact applications. I am especially interested in constrained generation, inverse problems, decision making, and imaging systems where physical consistency and uncertainty matter.</p>
-    <p>Before joining UTC, I was a Research Fellow at the Martinos Center. I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
+    <p>My research develops the theory and methods of backward stochastic processes for generative machine learning, and applies them to medical imaging, computational imaging, and inverse problems across engineering and the natural sciences.</p>
+    <p>Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
     <p>I lead <a class="text-link" href="https://laplace.center/">Laplace Lab</a>, an open research group for principled AI. Follow our work on <a class="text-link" href="https://github.com/LaplaceLab">GitHub</a>.</p>
   </div>
 </section>
