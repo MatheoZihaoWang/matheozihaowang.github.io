@@ -6,13 +6,16 @@ categories:
  - home
 ---
 
-<section class="hero">
+<section class="hero hero--with-photo">
   <div class="hero__eyebrow">Zihao Wang, PhD · 王子豪</div>
   <h1>Generative AI for<br><span>scientific and clinical</span> discovery.</h1>
   <p class="hero__lead">I am an Assistant Professor in Computer Science and Engineering at the University of Tennessee at Chattanooga and a Visiting Research Collaborator at the Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital and Harvard Medical School.</p>
   <div class="hero__actions">
     <a class="button button--primary" href="/Research/">Explore research <span aria-hidden="true">→</span></a>
     <a class="button button--secondary" href="/Contact/">Get in touch</a>
+  </div>
+  <div class="hero__portrait">
+    <img src="/assets/images/team/zihao-wang.jpg" alt="Portrait of Zihao Wang">
   </div>
 </section>
 
