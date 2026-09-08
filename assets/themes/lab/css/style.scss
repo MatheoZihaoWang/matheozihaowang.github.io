@@ -40,7 +40,7 @@ a:hover, a:focus { color: $accent; }
 .hero h1, .page-hero h1 { margin: 17px 0 28px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 7.3vw, 90px); font-weight: 400; letter-spacing: -.064em; line-height: .96; }
 .hero h1 { color: $accent-dark; font-size: clamp(24px, 3.65vw, 45px); }
 .hero h1 span { color: $accent; font-style: italic; }
-.hero__lead { max-width: 745px; color: #3d5149; font-size: clamp(12px, 1.4vw, 14px); line-height: 1.52; }
+.hero__lead { max-width: 745px; color: #3d5149; font-size: clamp(14px, 1.6vw, 16px); line-height: 1.52; }
 .hero__actions { display: flex; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; gap: 14px; border: 1px solid $accent-dark; border-radius: 2px; font-size: 14px; font-weight: 700; line-height: 1; padding: 15px 19px; transition: background .18s, color .18s, transform .18s; }
 .button:hover { transform: translateY(-2px); }
@@ -110,7 +110,7 @@ a:hover, a:focus { color: $accent; }
   .hero, .page-hero { padding: 73px 0 50px; }
   .hero h1, .page-hero h1 { font-size: clamp(46px, 13vw, 66px); }
   .hero h1 { font-size: clamp(23px, 6.5vw, 33px); }
-  .hero__lead { font-size: 12px; }
+  .hero__lead { font-size: 14px; }
   .page-hero > p { font-size: 18px; }
   .hero__actions { flex-wrap: wrap; }
   .signal-grid, .research-areas { grid-template-columns: 1fr; }
