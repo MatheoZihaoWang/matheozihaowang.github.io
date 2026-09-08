@@ -16,19 +16,36 @@ categories:
   </div>
 </section>
 
-<section class="signal-grid" aria-label="Research focus">
-  <div class="signal-card"><span>01</span><strong>Stochastic generative modeling</strong><p>Diffusion processes, score-based methods, and backward SDEs.</p></div>
-  <div class="signal-card"><span>02</span><strong>Constrained generation</strong><p>Inverse problems and physics-aware learning with verifiable constraints.</p></div>
-  <div class="signal-card"><span>03</span><strong>AI for imaging &amp; health</strong><p>Medical imaging, multimodal AI agents, control, and trustworthy clinical tools.</p></div>
-</section>
-
-<section class="section-block" id="about">
-  <div class="section-kicker">About</div>
-  <div class="section-content about-copy">
-    <h2>Building principled learning systems for the real world.</h2>
-    <p>My research develops the theory and methods of backward stochastic processes for generative machine learning, and applies them to medical imaging, computational imaging, and inverse problems across engineering and the natural sciences.</p>
-    <p>Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
-    <p>I lead <a class="text-link" href="https://laplace.center/">Laplace Lab</a>, an open research group for principled AI. Follow our work on <a class="text-link" href="https://github.com/LaplaceLab">GitHub</a>.</p>
+<section class="section-block" id="news">
+  <div class="section-kicker">Recent news</div>
+  <div class="section-content">
+    <div class="publication-list">
+      <article class="publication-item">
+        <div class="publication-year">2026–2027</div>
+        <div><h3>Multimodal AI Agents for Predictive Maintenance and Decision Support</h3><p><em>Applied AI and Industry Partnership Initiative</em> · $40,000 · Lead PI</p></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=A_zik4EAAAAJ&amp;sortby=pubdate&amp;citation_for_view=A_zik4EAAAAJ:1sJd4Hv_s6UC">CT-Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a></h3><p>Kegeng Tang, Jingbo Wang, Shaogang Ren, Zihao Wang <strong>(Work as PI)</strong> · <em>COLM 2026</em></p></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong> · <em>ICML 2026</em></p></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3>BlochShift: Physics-Guided Diffusion with Bloch-Based Drift for MRI Image Translation</h3><p>Zihao Wang <strong>(Work as PI)</strong>, Yu Gan, Ona Wu · <em>IEEE IVMSP 2026</em></p></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3>Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection</h3><p>Y. Liu, S. Chan, J. Chu, Y. Zhang, C. Yang, Zihao Wang, Y. R. Gel, Y. Chen · <em>WWW 2026</em></p></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong>, Yuzhou Chen, Shaogang Ren · <em>ICLR 2026</em></p></div>
+      </article>
+    </div>
+    <a class="text-link" href="/News/archive/">View news archive →</a>
   </div>
 </section>
 
@@ -50,6 +67,16 @@ categories:
       </article>
     </div>
     <a class="text-link" href="/Research/">View publications and research areas →</a>
+  </div>
+</section>
+
+<section class="section-block" id="about">
+  <div class="section-kicker">About</div>
+  <div class="section-content about-copy">
+    <h2>Building principled learning systems for the real world.</h2>
+    <p>My research develops the theory and methods of backward stochastic processes for generative machine learning, and applies them to medical imaging, computational imaging, and inverse problems across engineering and the natural sciences.</p>
+    <p>Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
+    <p>I lead <a class="text-link" href="https://laplace.center/">Laplace Lab</a>, an open research group for principled AI. Follow our work on <a class="text-link" href="https://github.com/LaplaceLab">GitHub</a>.</p>
   </div>
 </section>
 
