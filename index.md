@@ -21,28 +21,28 @@ categories:
   <div class="section-content">
     <div class="publication-list">
       <article class="publication-item">
-        <div class="publication-year">2026–2027</div>
-        <div><h3>Multimodal AI Agents for Predictive Maintenance and Decision Support</h3><p><em>Applied AI and Industry Partnership Initiative</em> · $40,000 · Lead PI</p></div>
+        <div class="publication-year">2026</div>
+        <div><h3><em>Applied AI and Industry Partnership Initiative</em> · $40,000 · Lead PI</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=A_zik4EAAAAJ&amp;sortby=pubdate&amp;citation_for_view=A_zik4EAAAAJ:1sJd4Hv_s6UC">CT-Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a></h3><p>Kegeng Tang, Jingbo Wang, Shaogang Ren, Zihao Wang <strong>(Work as PI)</strong> · <em>COLM 2026</em></p></div>
+        <div><h3>PhD Candidate Kegeng Tang’s CT-Bench accepted at COLM 2026</h3><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=A_zik4EAAAAJ&amp;sortby=pubdate&amp;citation_for_view=A_zik4EAAAAJ:1sJd4Hv_s6UC">CT-Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a> · Kegeng Tang, Jingbo Wang, Shaogang Ren, Zihao Wang <strong>(Work as PI)</strong></p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong> · <em>ICML 2026</em></p></div>
+        <div><h3>Backward SDE-based diffusion work accepted at ICML 2026</h3><p><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a> · Zihao Wang <strong>(Work as PI)</strong></p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>BlochShift: Physics-Guided Diffusion with Bloch-Based Drift for MRI Image Translation</h3><p>Zihao Wang <strong>(Work as PI)</strong>, Yu Gan, Ona Wu · <em>IEEE IVMSP 2026</em></p></div>
+        <div><h3>BlochShift accepted at IEEE IVMSP 2026</h3><p><em>BlochShift: Physics-Guided Diffusion with Bloch-Based Drift for MRI Image Translation</em> · Zihao Wang <strong>(Work as PI)</strong>, Yu Gan, Ona Wu</p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection</h3><p>Y. Liu, S. Chan, J. Chu, Y. Zhang, C. Yang, Zihao Wang, Y. R. Gel, Y. Chen · <em>WWW 2026</em></p></div>
+        <div><h3>Multi-modal graph transfer learning published at WWW 2026</h3><p><em>Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection</em> · Y. Liu, S. Chan, J. Chu, Y. Zhang, C. Yang, Zihao Wang, Y. R. Gel, Y. Chen</p></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a></h3><p>Zihao Wang <strong>(Work as PI)</strong>, Yuzhou Chen, Shaogang Ren · <em>ICLR 2026</em></p></div>
+        <div><h3>Adaptive Domain Shift accepted at ICLR 2026</h3><p><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a> · Zihao Wang <strong>(Work as PI)</strong>, Yuzhou Chen, Shaogang Ren</p></div>
       </article>
     </div>
     <a class="text-link" href="/News/archive/">View news archive →</a>
