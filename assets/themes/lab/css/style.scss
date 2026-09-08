@@ -71,6 +71,8 @@ a:hover, a:focus { color: $accent; }
 .publication-item h3.news-brief { font-size: 14px; }
 .publication-item h3 a:hover { color: $accent; }
 .publication-item p { color: $muted; font-size: 14px; line-height: 1.45; margin: 0; }
+#news .publication-item { padding: 12px 0; }
+#news .publication-item h3 { margin: 0; }
 
 .page-hero { max-width: 860px; padding: 110px 0 70px; }
 .page-hero h1 { font-size: clamp(45px, 6vw, 75px); margin-bottom: 25px; }
