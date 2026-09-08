@@ -26,7 +26,7 @@ categories:
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>PhD Candidate Kegeng Tang’s CT-Bench accepted at COLM 2026</h3><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=A_zik4EAAAAJ&amp;sortby=pubdate&amp;citation_for_view=A_zik4EAAAAJ:1sJd4Hv_s6UC">CT-Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models</a> · Kegeng Tang, Jingbo Wang, Shaogang Ren, Zihao Wang <strong>(Work as PI)</strong></p></div>
+        <div><h3 class="news-brief">PhD Candidate Kegeng Tang’s CT-Bench accepted at COLM 2026</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
