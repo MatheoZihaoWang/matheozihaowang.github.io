@@ -22,7 +22,11 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3 class="news-brief"><em>Applied AI and Industry Partnership Initiative</em> · $40,000 · Lead PI</h3></div>
+        <div><h3 class="news-brief">I will serve ICLR as an Area Chair.</h3></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div><h3 class="news-brief"><em>Applied AI and Industry Partnership Initiative</em> · Lead PI</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
