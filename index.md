@@ -30,19 +30,19 @@ categories:
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>Backward SDE-based diffusion work accepted at ICML 2026</h3><p><a href="https://openreview.net/forum?id=EruwQ3b5QL">Backward SDE-Based Diffusion for Physics-Constrained Generation</a> · Zihao Wang <strong>(Work as PI)</strong></p></div>
+        <div><h3 class="news-brief">New work on backward SDE-based diffusion accepted at ICML 2026</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>BlochShift accepted at IEEE IVMSP 2026</h3><p><em>BlochShift: Physics-Guided Diffusion with Bloch-Based Drift for MRI Image Translation</em> · Zihao Wang <strong>(Work as PI)</strong>, Yu Gan, Ona Wu</p></div>
+        <div><h3 class="news-brief">BlochShift accepted at IEEE IVMSP 2026</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>Multi-modal graph transfer learning published at WWW 2026</h3><p><em>Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection</em> · Y. Liu, S. Chan, J. Chu, Y. Zhang, C. Yang, Zihao Wang, Y. R. Gel, Y. Chen</p></div>
+        <div><h3 class="news-brief">Multi-modal graph transfer learning published at WWW 2026</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3>Adaptive Domain Shift accepted at ICLR 2026</h3><p><a href="https://arxiv.org/abs/2601.18623">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a> · Zihao Wang <strong>(Work as PI)</strong>, Yuzhou Chen, Shaogang Ren</p></div>
+        <div><h3 class="news-brief">Adaptive Domain Shift accepted at ICLR 2026</h3></div>
       </article>
     </div>
     <a class="text-link" href="/News/archive/">View news archive →</a>
