@@ -71,6 +71,9 @@ a:hover, a:focus { color: $accent; }
 .publication-item h3.news-brief { font-size: 15px; }
 .publication-item h3 a:hover { color: $accent; }
 .publication-item p { color: $muted; font-size: 14px; line-height: 1.45; margin: 0; }
+.artifact-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+.artifact-links a { border: 0; display: inline-flex; line-height: 1; }
+.artifact-links img { display: block; height: 24px; max-width: 100%; width: auto; }
 #news .publication-item { padding: 9px 0; }
 #news .publication-item h3 { line-height: 1.1; margin: 0; }
 #news { padding-top: 55px; }
@@ -90,6 +93,7 @@ a:hover, a:focus { color: $accent; }
 .bibliography li::before { color: $accent; content: "[" counter(reference) "]"; font-size: 12px; font-weight: 800; left: 0; position: absolute; top: 15px; }
 .bibliography a { color: $accent-dark; border-bottom: 1px solid rgba(23, 74, 49, .4); }
 .bibliography .paper-link { font-family: Inter, ui-sans-serif, sans-serif; font-size: 12px; font-weight: 800; margin-left: 5px; white-space: nowrap; }
+.bibliography .artifact-links { margin-top: 9px; }
 .publication-note { color: $muted; font-size: 15px; }
 
 .contact-grid h2 { font-family: Inter, ui-sans-serif, sans-serif; font-size: 17px; font-weight: 800; letter-spacing: -.02em; margin: 0 0 5px; }
