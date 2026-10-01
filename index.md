@@ -22,6 +22,10 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
+        <div><h3 class="news-brief">Co-advised student Jingbo Wang, jointly advised with Shaogang Ren at UTC, published SCDM at NeurIPS 2026.</h3></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
         <div><h3 class="news-brief">I will serve ICLR as an Area Chair.</h3></div>
       </article>
       <article class="publication-item">
@@ -57,6 +61,16 @@ categories:
   <div class="section-kicker">Selected recent work</div>
   <div class="section-content">
     <div class="publication-list">
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div>
+          <h3><a href="https://neurips.cc/virtual/2026/poster/153991">SCDM: Scalable Causal Discovery in Nonlinear Temporal Systems with Meta-Learning</a></h3>
+          <p>Jingbo Wang, Kegeng Tang, Zihao Wang, Shaogang Ren · <em>NeurIPS 2026</em></p>
+          <div class="artifact-links" aria-label="SCDM paper resources">
+            <a href="https://neurips.cc/virtual/2026/poster/153991"><img src="https://img.shields.io/badge/NeurIPS-2026-8B0000?style=for-the-badge" alt="NeurIPS 2026 presentation"></a>
+          </div>
+        </div>
+      </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
         <div>
