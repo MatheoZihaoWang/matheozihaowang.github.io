@@ -22,7 +22,7 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3 class="news-brief">Latent Visual Contrastive Reasoning with Multi-Branch Exploration was accepted as a short paper at IEEE BigData 2026 (19.2% acceptance rate).</h3></div>
+        <div><h3 class="news-brief">Latent Visual Contrastive Reasoning with Multi-Branch Exploration was accepted as a short paper at IEEE BigData 2026.</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
