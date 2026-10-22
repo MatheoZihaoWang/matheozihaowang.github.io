@@ -22,6 +22,10 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
+        <div><h3 class="news-brief">BigD1184, “Latent Visual Contrastive Reasoning with Multi-Branch Exploration,” was accepted as a short paper at IEEE BigData 2026 (19.2% acceptance rate).</h3></div>
+      </article>
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
         <div><h3 class="news-brief">Co-advised student Jingbo Wang, jointly advised with Shaogang Ren at UTC, published SCDM at NeurIPS 2026.</h3></div>
       </article>
       <article class="publication-item">
@@ -61,6 +65,13 @@ categories:
   <div class="section-kicker">Selected recent work</div>
   <div class="section-content">
     <div class="publication-list">
+      <article class="publication-item">
+        <div class="publication-year">2026</div>
+        <div>
+          <h3>Latent Visual Contrastive Reasoning with Multi-Branch Exploration</h3>
+          <p>Kegeng Tang, Jingbo Wang, Yangming Zhang, Huanshu Zhang, Shaogang Ren, Zihao Wang · <em>IEEE BigData 2026</em> · Short paper</p>
+        </div>
+      </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
         <div>
