@@ -35,7 +35,7 @@ a:hover, a:focus { color: $accent; }
 .site-nav .nav-scholar { color: $accent-dark; border-bottom: 1px solid $accent-dark; padding-bottom: 2px; }
 .nav-toggle { display: none; background: transparent; border: 0; color: $ink; font: inherit; font-weight: 600; padding: 8px 0; }
 
-.hero { padding: 64px 0 58px; max-width: 1000px; }
+.hero { padding: 24px 0 58px; max-width: 1000px; }
 .hero__eyebrow, .section-kicker { color: $accent; font-size: 12px; font-weight: 800; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
 .hero h1, .page-hero h1 { color: $accent-dark; margin: 17px 0 28px; font-family: "DotGothic16", ui-monospace, monospace; font-size: clamp(22px, 3vw, 38px); font-weight: 400; letter-spacing: -.064em; line-height: .96; }
 .hero h1 span { color: $accent; font-style: italic; }
@@ -77,7 +77,7 @@ a:hover, a:focus { color: $accent; }
 #news .publication-item h3 { line-height: 1.1; margin: 0; }
 #news { padding-top: 55px; }
 
-.page-hero { max-width: 860px; padding: 64px 0 58px; }
+.page-hero { max-width: 860px; padding: 24px 0 58px; }
 .research-areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; padding: 40px 0 78px; }
 .research-areas article { border-top: 2px solid $accent; padding-top: 21px; }
 .research-areas span { margin-bottom: 17px; }
@@ -108,7 +108,7 @@ a:hover, a:focus { color: $accent; }
   .nav-toggle { display: block; }
   .site-nav { display: none; position: absolute; top: 64px; left: -16px; right: -16px; background: $paper; border-bottom: 1px solid $line; box-shadow: 0 13px 24px rgba(0, 0, 0, .08); padding: 15px 16px 21px; flex-direction: column; align-items: flex-start; gap: 14px; }
   .site-nav.is-open { display: flex; }
-  .hero, .page-hero { padding: 44px 0 38px; }
+  .hero, .page-hero { padding: 18px 0 38px; }
   .hero h1, .page-hero h1 { font-size: clamp(21px, 5.8vw, 29px); }
   .hero__lead, .page-hero > p { font-size: 14px; }
   .hero__actions { flex-wrap: wrap; }
