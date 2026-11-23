@@ -4,7 +4,7 @@ title: Contact | Zihao Wang
 description: Contact Zihao Wang, PhD.
 ---
 
-<section class="page-hero page-hero--compact">
+<section class="page-hero">
   <div class="hero__eyebrow">Contact</div>
   <h1>Let’s build useful AI together.</h1>
   <p>For research, student advising, and collaborations in generative AI, medical imaging, and scientific computing:</p>
