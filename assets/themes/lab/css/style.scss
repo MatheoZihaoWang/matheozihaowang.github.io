@@ -92,6 +92,19 @@ a:hover, a:focus { color: $accent; }
 .research-areas article { border-top: 2px solid $accent; padding-top: 21px; }
 .research-areas span { font-weight: 800; margin-bottom: 17px; }
 .research-areas h2 { font-size: var(--content-font-size); font-weight: 800; margin: 0; }
+.research-areas { align-items: start; }
+.thrust summary { cursor: pointer; list-style: none; }
+.thrust summary::-webkit-details-marker { display: none; }
+.thrust summary:hover h2 { text-decoration: underline; text-underline-offset: 3px; }
+.thrust summary:focus-visible { outline: 2px solid $ink; outline-offset: 6px; }
+.research-areas .thrust-toggle { font-weight: 400; letter-spacing: 0; margin: 12px 0 0; text-transform: none; text-decoration: underline; text-underline-offset: 3px; }
+.thrust-toggle::after { content: "Open +"; }
+.thrust[open] .thrust-toggle::after { content: "Close −"; }
+.thrust-content { border-top: 1px solid $line; margin-top: 16px; padding-top: 6px; }
+.thrust-content p { margin: 12px 0 0; line-height: 1.65; }
+.thrust[open] .thrust-content { animation: thrust-unfold .22s ease-out; }
+@keyframes thrust-unfold { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .thrust[open] .thrust-content { animation: none; } }
 .publications-section { padding-top: 43px; }
 .publications-section .section-content > h2 { font-family: "DotGothic16", ui-monospace, monospace; font-size: var(--content-font-size); font-weight: 400; letter-spacing: -.025em; margin: 0 0 18px; }
 .bibliography { margin: 0 0 47px; padding: 0; list-style: none; counter-reset: reference; }
