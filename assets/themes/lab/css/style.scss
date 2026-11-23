@@ -90,8 +90,8 @@ a:hover, a:focus { color: $accent; }
 .page-hero { max-width: 860px; padding: 24px 0 29px; }
 .research-areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; padding: 20px 0 39px; }
 .research-areas article { border-top: 2px solid $accent; padding-top: 21px; }
-.research-areas span { margin-bottom: 17px; }
-.research-areas h2 { font-size: var(--content-font-size); margin: 0; }
+.research-areas span { font-weight: 800; margin-bottom: 17px; }
+.research-areas h2 { font-size: var(--content-font-size); font-weight: 800; margin: 0; }
 .publications-section { padding-top: 43px; }
 .publications-section .section-content > h2 { font-family: "DotGothic16", ui-monospace, monospace; font-size: var(--content-font-size); font-weight: 400; letter-spacing: -.025em; margin: 0 0 18px; }
 .bibliography { margin: 0 0 47px; padding: 0; list-style: none; counter-reset: reference; }
