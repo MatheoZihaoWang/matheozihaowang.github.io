@@ -22,7 +22,7 @@ categories:
     <div class="publication-list">
       <article class="publication-item">
         <div class="publication-year">2026</div>
-        <div><h3 class="news-brief">Latent Visual Contrastive Reasoning with Multi-Branch Exploration was accepted as a short paper at IEEE BigData 2026.</h3></div>
+        <div><h3 class="news-brief">Latent Visual Contrastive Reasoning with Multi-Branch Exploration was accepted at IEEE BigData 2026.</h3></div>
       </article>
       <article class="publication-item">
         <div class="publication-year">2026</div>
@@ -69,7 +69,7 @@ categories:
         <div class="publication-year">2026</div>
         <div>
           <h3>Latent Visual Contrastive Reasoning with Multi-Branch Exploration</h3>
-          <p>Kegeng Tang, Jingbo Wang, Yangming Zhang, Huanshu Zhang, Shaogang Ren, Zihao Wang · <em>IEEE BigData 2026</em> · Short paper</p>
+          <p>Kegeng Tang, Jingbo Wang, Yangming Zhang, Huanshu Zhang, Shaogang Ren, Zihao Wang · <em>IEEE BigData 2026</em></p>
         </div>
       </article>
       <article class="publication-item">
