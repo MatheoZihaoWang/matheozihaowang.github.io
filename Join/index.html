@@ -1,0 +1,145 @@
+---
+layout: default
+title: Join Us | Zihao Wang
+description: Research opportunities with Zihao Wang and Laplace Lab for undergraduate, master's, PhD, and visiting researchers.
+---
+
+<section class="join-hero">
+  <div class="hero__eyebrow">Join Us</div>
+  <h1>Research with Laplace Lab.</h1>
+  <p>We welcome students and visiting researchers who want to build principled AI systems for medical imaging, robotics, and engineering. Select an opportunity below to open its project page.</p>
+</section>
+
+<section class="join-book" data-join-book aria-label="Research opportunities">
+  <div class="join-page join-page--index">
+    <div class="join-page__header">
+      <span>Open opportunities</span>
+      <span>2027</span>
+    </div>
+
+    <div class="join-group">
+      <div class="join-group__title">Undergraduate Research Assistant and Graduate Thesis</div>
+
+      <button class="join-role" type="button" data-role="undergraduate-ra" aria-expanded="false" aria-controls="join-detail">
+        <span><strong>Undergraduate Research Assistant</strong><small>Spring 2027 · 2 openings</small></span>
+        <span class="join-role__action" aria-hidden="true">Open</span>
+      </button>
+
+      <button class="join-role" type="button" data-role="phd-thesis" aria-expanded="false" aria-controls="join-detail">
+        <span><strong>PhD Thesis</strong><small>1 opening</small></span>
+        <span class="join-role__action" aria-hidden="true">Open</span>
+      </button>
+
+      <button class="join-role" type="button" data-role="master-ra" aria-expanded="false" aria-controls="join-detail">
+        <span><strong>Master's Research Assistant</strong><small>1 opening</small></span>
+        <span class="join-role__action" aria-hidden="true">Open</span>
+      </button>
+    </div>
+
+    <div class="join-group">
+      <div class="join-group__title">Summer Research Visiting</div>
+      <button class="join-role" type="button" data-role="summer-visiting" aria-expanded="false" aria-controls="join-detail">
+        <span><strong>Summer Research Visitor</strong><small>Short-term research visit · By arrangement</small></span>
+        <span class="join-role__action" aria-hidden="true">Open</span>
+      </button>
+    </div>
+
+    <p class="join-index__note">Opportunities are based at the University of Tennessee at Chattanooga and advised through Laplace Lab.</p>
+  </div>
+
+  <div class="join-page join-page--detail" id="join-detail" aria-live="polite">
+    <div class="join-detail__inner">
+      <div class="join-page__header">
+        <span>Position details</span>
+        <button class="join-close" type="button" data-close-role>Close</button>
+      </div>
+
+      <article class="join-description" data-description="undergraduate-ra" hidden>
+        <div class="join-description__meta">Spring 2027 · 2 openings</div>
+        <h2 tabindex="-1">Undergraduate Research Assistant</h2>
+        <p><strong>Research topic</strong><br>Medical Image Analysis and Processing</p>
+        <p>You will contribute to research on computational methods for understanding and processing medical images. The work may include data preparation, image analysis pipelines, model development, and quantitative evaluation.</p>
+        <h3>Good preparation</h3>
+        <p>Interest in medical imaging and machine learning, basic programming experience, and the ability to work consistently during the Spring 2027 semester.</p>
+        <h3>How to express interest</h3>
+        <p>Send a short introduction, your résumé or CV, and a description of relevant coursework or project experience to <span class="email-obfuscated">zihao [.] wang@ieee.org</span>.</p>
+      </article>
+
+      <article class="join-description" data-description="phd-thesis" hidden>
+        <div class="join-description__meta">1 opening</div>
+        <h2 tabindex="-1">PhD Thesis</h2>
+        <p><strong>Research topic</strong><br>Precision Image Reconstruction for Embodied Surgical Robot Navigation</p>
+        <p>This project studies precise, physically grounded image reconstruction for perception and navigation in embodied surgical robotic systems. The research connects inverse problems, generative modeling, uncertainty, and navigation-aware imaging.</p>
+        <h3>Good preparation</h3>
+        <p>A strong background in machine learning, computer vision, medical imaging, optimization, applied mathematics, robotics, or a closely related field.</p>
+        <h3>How to express interest</h3>
+        <p>Send a short research statement, your CV, and representative research or project work to <span class="email-obfuscated">zihao [.] wang@ieee.org</span>.</p>
+      </article>
+
+      <article class="join-description" data-description="master-ra" hidden>
+        <div class="join-description__meta">1 opening</div>
+        <h2 tabindex="-1">Master's Research Assistant</h2>
+        <p><strong>Research topic</strong><br>Agentic Industrial Defect Prediction</p>
+        <p>This project develops agentic learning systems for industrial defect prediction. The work focuses on combining predictive models, tool-using agents, and structured reasoning for reliable analysis of industrial data.</p>
+        <h3>Good preparation</h3>
+        <p>Experience with machine learning, data analysis, software development, or intelligent agents, together with an interest in applied industrial AI.</p>
+        <h3>How to express interest</h3>
+        <p>Send a short introduction, your résumé or CV, and links to relevant technical work to <span class="email-obfuscated">zihao [.] wang@ieee.org</span>.</p>
+      </article>
+
+      <article class="join-description" data-description="summer-visiting" hidden>
+        <div class="join-description__meta">Short-term research visit · By arrangement</div>
+        <h2 tabindex="-1">Summer Research Visiting</h2>
+        <p>Summer visitors work on a focused project aligned with Laplace Lab's research in generative machine learning, medical and computational imaging, agentic systems, robotics, or inverse problems.</p>
+        <h3>Planning a visit</h3>
+        <p>Propose a clear research question, expected visit period, and the experience you would bring. Project scope and availability are agreed before the visit.</p>
+        <h3>How to express interest</h3>
+        <p>Send a short project proposal, your CV, and your preferred visit dates to <span class="email-obfuscated">zihao [.] wang@ieee.org</span>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var book = document.querySelector('[data-join-book]');
+    if (!book) return;
+    var roles = Array.prototype.slice.call(book.querySelectorAll('[data-role]'));
+    var descriptions = Array.prototype.slice.call(book.querySelectorAll('[data-description]'));
+    var closeButton = book.querySelector('[data-close-role]');
+    var activeRole = null;
+
+    function openRole(id, moveFocus) {
+      var description = book.querySelector('[data-description="' + id + '"]');
+      var trigger = book.querySelector('[data-role="' + id + '"]');
+      if (!description || !trigger) return;
+      roles.forEach(function (role) {
+        var selected = role === trigger;
+        role.classList.toggle('is-active', selected);
+        role.setAttribute('aria-expanded', selected ? 'true' : 'false');
+      });
+      descriptions.forEach(function (item) { item.hidden = item !== description; });
+      activeRole = trigger;
+      book.classList.add('is-open');
+      if (window.history && window.history.replaceState) window.history.replaceState(null, '', '#' + id);
+      if (moveFocus && window.matchMedia('(max-width: 840px)').matches) description.querySelector('h2').focus();
+    }
+
+    roles.forEach(function (role) {
+      role.addEventListener('click', function () { openRole(role.getAttribute('data-role'), true); });
+    });
+    closeButton.addEventListener('click', function () {
+      book.classList.remove('is-open');
+      roles.forEach(function (role) {
+        role.classList.remove('is-active');
+        role.setAttribute('aria-expanded', 'false');
+      });
+      descriptions.forEach(function (item) { item.hidden = true; });
+      if (window.history && window.history.replaceState) window.history.replaceState(null, '', window.location.pathname);
+      if (activeRole) activeRole.focus();
+    });
+
+    var initialRole = window.location.hash.replace('#', '');
+    if (initialRole) openRole(initialRole, false);
+  }());
+</script>
