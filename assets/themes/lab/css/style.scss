@@ -3,9 +3,9 @@
 
 $ink: #000;
 $muted: #000;
-$paper: #fff;
-$mist: #f2f2f2;
-$line: #d6d6d6;
+$paper: #d9dad5;
+$mist: #cdd0ca;
+$line: #a9aba6;
 $accent: #000;
 $accent-dark: #000;
 
@@ -16,7 +16,12 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: $ink;
-  background: $paper;
+  background-color: $paper;
+  background-image:
+    linear-gradient(118deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0) 34%, rgba(0, 0, 0, .025) 72%, rgba(255, 255, 255, .08)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .035) 0 1px, rgba(0, 0, 0, .018) 1px 2px, transparent 2px 4px);
+  background-attachment: fixed;
+  background-size: 100% 100%, 4px 100%;
   font-family: "DotGothic16", ui-monospace, monospace;
   font-size: var(--content-font-size);
   line-height: 1.65;
@@ -34,7 +39,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 a { color: inherit; text-decoration: none; }
 a:hover, a:focus { color: $accent; }
 .site-shell { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
-.site-header { border-bottom: 1px solid $line; background: rgba(255, 255, 255, .96); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); }
+.site-header { border-bottom: 1px solid $line; background: rgba($paper, .94); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(14px); }
 .nav-wrap { height: 74px; display: flex; align-items: center; justify-content: space-between; }
 .site-mark { color: $ink; font-family: "DotGothic16", ui-monospace, monospace; font-size: 25px; font-weight: 700; letter-spacing: -.08em; }
 .site-mark span { color: $accent; }
