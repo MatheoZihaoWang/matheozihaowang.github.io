@@ -51,11 +51,16 @@ a:hover, a:focus { color: $accent; }
 .site-mark span { color: $accent; }
 .site-mark--avatar { display: block; height: 37px; width: 37px; }
 .site-mark--avatar img { border: 1px solid $line; border-radius: 50%; display: block; filter: grayscale(1); height: 100%; object-fit: cover; width: 100%; }
-.site-nav { display: flex; align-items: center; gap: 29px; font-size: 16px; font-weight: 600; letter-spacing: .01em; }
+.site-nav { display: flex; align-items: center; gap: 24px; font-size: 16px; font-weight: 600; letter-spacing: .01em; }
 .site-nav a { color: $ink; }
 .site-nav a:hover { color: $accent; }
 .site-nav .nav-scholar { color: $accent-dark; border-bottom: 1px solid $accent-dark; padding-bottom: 2px; }
 .nav-toggle { display: none; background: transparent; border: 0; color: $ink; font: inherit; font-weight: 600; padding: 8px 0; }
+.language-switch { align-items: center; border-left: 1px solid $line; display: inline-flex; gap: 6px; margin-left: 2px; padding-left: 16px; }
+.language-switch button { appearance: none; background: transparent; border: 0; color: $ink; cursor: pointer; font: inherit; font-size: 12px; font-weight: 400; opacity: .48; padding: 3px 0; }
+.language-switch button:hover, .language-switch button:focus-visible { opacity: 1; outline: 1px solid $ink; outline-offset: 3px; }
+.language-switch button.is-active { font-weight: 800; opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft YaHei", ui-monospace, monospace; }
 
 .hero { padding: 24px 0 29px; max-width: 1000px; }
 .hero__eyebrow, .section-kicker { color: $accent; font-size: 12px; font-weight: 800; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
@@ -219,6 +224,7 @@ a:hover, a:focus { color: $accent; }
   .nav-toggle { display: block; }
   .site-nav { display: none; position: absolute; top: 64px; left: -16px; right: -16px; background: $paper; border-bottom: 1px solid $line; box-shadow: 0 13px 24px rgba(0, 0, 0, .08); padding: 15px 16px 21px; flex-direction: column; align-items: flex-start; gap: 14px; }
   .site-nav.is-open { display: flex; }
+  .language-switch { border-left: 0; border-top: 1px solid $line; margin: 4px 0 0; padding: 12px 0 0; }
   .hero, .page-hero { padding: 18px 0 19px; }
   .hero h1, .page-hero h1 { font-size: clamp(21px, 5.8vw, 29px); }
   .hero__lead, .page-hero > p { font-size: var(--content-font-size); }

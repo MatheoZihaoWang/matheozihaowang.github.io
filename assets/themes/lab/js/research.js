@@ -77,6 +77,7 @@
     });
     if (active) panel.setAttribute('aria-labelledby', active.heading.id);
     else panel.removeAttribute('aria-labelledby');
+    if (window.siteLanguageRefresh) window.siteLanguageRefresh(reader);
     (active || previous)?.button.focus({ preventScroll: true });
 
     if (reducedMotion.matches) return;
