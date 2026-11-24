@@ -127,7 +127,7 @@ categories:
   <div class="section-content about-copy">
     <h2>Building principled learning systems for the real world.</h2>
     <p>My research develops the theory and methods of backward stochastic processes for generative machine learning, and applies them to medical imaging, computational imaging, and inverse problems across engineering and the natural sciences.</p>
-    <p>Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
+    <p>Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD (avec félicitations du jury) from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.</p>
     <p>I lead <a class="text-link" href="https://laplace.center/">Laplace Lab</a>, an open research group for principled AI. Follow our work on <a class="text-link" href="https://github.com/LaplaceLab">GitHub</a>.</p>
   </div>
 </section>

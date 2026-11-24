@@ -55,7 +55,7 @@
     'About': '关于我',
     'Building principled learning systems for the real world.': '为真实世界构建有理论依据的学习系统。',
     'My research develops the theory and methods of backward stochastic processes for generative machine learning, and applies them to medical imaging, computational imaging, and inverse problems across engineering and the natural sciences.': '我的研究面向生成式机器学习发展倒向随机过程的理论与方法，并将其应用于医疗成像、计算成像，以及工程与自然科学中的反问题。',
-    "Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD with highest honors from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.": '加入 UTC 之前，我于麻省总医院与哈佛医学院 Athinoula A. Martinos 生物医学成像中心完成博士后研究训练（2022–2024）。我以最高荣誉获得蔚蓝海岸大学 / Inria 博士学位，博士论文聚焦于面向医疗数据处理、分析与建模的深度生成学习。',
+    "Before joining UTC, I completed my postdoctoral training as a Research Fellow at the Athinoula A. Martinos Center for Biomedical Imaging at Massachusetts General Hospital and Harvard Medical School (2022–2024). I received my PhD (avec félicitations du jury) from Université Côte d'Azur / Inria, where my dissertation focused on deep generative learning for medical data processing, analysis, and modeling.": '加入 UTC 之前，我于麻省总医院与哈佛医学院 Athinoula A. Martinos 生物医学成像中心完成博士后研究训练（2022–2024）。我获得蔚蓝海岸大学 / Inria 博士学位（avec félicitations du jury），博士论文聚焦于面向医疗数据处理、分析与建模的深度生成学习。',
     'I lead': '我负责',
     ', an open research group for principled AI. Follow our work on': '，这是一个研究有理论依据人工智能的开放团队。我们的工作发布于',
     'Work with me': '合作研究',
