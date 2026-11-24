@@ -19,19 +19,29 @@ body {
   margin: 0;
   color: $ink;
   background-color: $paper;
-  // Static surface layers sit behind the content, keeping black text crisp.
+  // Broad lighting stays behind the page; screen texture is a single fixed overlay.
   background-image:
-    $rlcd-grain,
-    $rlcd-cells,
     radial-gradient(ellipse at 25% 8%, rgba(255, 255, 255, .28), transparent 65%),
     radial-gradient(ellipse at 48% 40%, transparent 46%, rgba(0, 0, 0, .085) 100%),
     linear-gradient(135deg, #d5d5d5, #cecece 58%, #c5c5c5);
   background-attachment: fixed;
-  background-size: 192px 192px, 3px 3px, 100% 100%, 100% 100%, 100% 100%;
+  background-size: 100% 100%, 100% 100%, 100% 100%;
   font-family: "DotGothic16", ui-monospace, monospace;
   font-size: var(--content-font-size);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+// The physical display grid must not scroll or rotate with page surfaces.
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  background-image: $rlcd-grain, $rlcd-cells;
+  background-size: 192px 192px, 3px 3px;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: inherit;
@@ -173,8 +183,8 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
 .join-book.is-open { grid-template-columns: minmax(340px, .88fr) minmax(440px, 1.12fr); }
 .join-page { background: $paper; border: 1px solid $ink; min-width: 0; }
 .site-header, .join-page {
-  background-image: $rlcd-grain, $rlcd-cells, linear-gradient(115deg, rgba(255, 255, 255, .11), transparent 70%);
-  background-size: 192px 192px, 3px 3px, 100% 100%;
+  background-image: linear-gradient(115deg, rgba(255, 255, 255, .11), transparent 70%);
+  background-size: 100% 100%;
 }
 .join-page--index { padding: 26px 28px; position: relative; z-index: 2; }
 .join-page--detail { border-left: 0; opacity: 0; overflow: hidden; pointer-events: none; position: relative; transform: rotateY(-86deg); transform-origin: left center; transition: opacity .24s ease, transform .55s cubic-bezier(.2, .72, .2, 1); }
@@ -249,9 +259,11 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
 }
 
 @media (forced-colors: active) {
+  body::after { display: none; }
   body, .site-header, .join-page { background-image: none; }
 }
 @media print {
+  body::after { display: none; }
   body, .site-header, .join-page { background: #fff; }
   .section-block--tint { background: transparent; box-shadow: none; }
 }
