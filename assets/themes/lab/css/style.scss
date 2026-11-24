@@ -11,7 +11,7 @@ $accent-dark: #000;
 $rlcd-grain: url("/assets/images/rlcd-grain.svg");
 $rlcd-cells: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .055) .45px, transparent .8px);
 
-:root { --content-font-size: 15px; }
+:root { --content-font-size: 15px; --rlcd-cell-size: 3px; --rlcd-scroll-offset: 0px; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -39,9 +39,15 @@ body::after {
   z-index: 1000;
   pointer-events: none;
   background-image: $rlcd-grain, $rlcd-cells;
-  background-size: 192px 192px, 3px 3px;
+  background-size: 192px 192px, var(--rlcd-cell-size) var(--rlcd-cell-size);
   background-repeat: repeat;
   mix-blend-mode: multiply;
+}
+// Quantize only content painting; native scrolling and the fixed screen stay intact.
+body > main, body > .site-footer { translate: 0 var(--rlcd-scroll-offset); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body > main, body > .site-footer { translate: none; }
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: inherit;
@@ -263,6 +269,7 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
   body, .site-header, .join-page { background-image: none; }
 }
 @media print {
+  body > main, body > .site-footer { translate: none; }
   body::after { display: none; }
   body, .site-header, .join-page { background: #fff; }
   .section-block--tint { background: transparent; box-shadow: none; }
