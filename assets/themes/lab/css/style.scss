@@ -8,12 +8,10 @@ $mist: #c4c4c4;
 $line: #9e9e9e;
 $accent: #000;
 $accent-dark: #000;
+$rlcd-grain: url("/assets/images/rlcd-grain.svg");
+$rlcd-cells: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .055) .45px, transparent .8px);
 
-:root {
-  --content-font-size: 15px;
-  --rlcd-grain: url("/assets/images/rlcd-grain.svg");
-  --rlcd-cells: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .055) .45px, transparent .8px);
-}
+:root { --content-font-size: 15px; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -23,8 +21,8 @@ body {
   background-color: $paper;
   // Static surface layers sit behind the content, keeping black text crisp.
   background-image:
-    var(--rlcd-grain),
-    var(--rlcd-cells),
+    $rlcd-grain,
+    $rlcd-cells,
     radial-gradient(ellipse at 25% 8%, rgba(255, 255, 255, .28), transparent 65%),
     radial-gradient(ellipse at 48% 40%, transparent 46%, rgba(0, 0, 0, .085) 100%),
     linear-gradient(135deg, #d5d5d5, #cecece 58%, #c5c5c5);
@@ -170,7 +168,7 @@ a:hover, a:focus { color: $accent; }
 .join-book.is-open { grid-template-columns: minmax(340px, .88fr) minmax(440px, 1.12fr); }
 .join-page { background: $paper; border: 1px solid $ink; min-width: 0; }
 .site-header, .join-page {
-  background-image: var(--rlcd-grain), var(--rlcd-cells), linear-gradient(115deg, rgba(255, 255, 255, .11), transparent 70%);
+  background-image: $rlcd-grain, $rlcd-cells, linear-gradient(115deg, rgba(255, 255, 255, .11), transparent 70%);
   background-size: 192px 192px, 3px 3px, 100% 100%;
 }
 .join-page--index { padding: 26px 28px; position: relative; z-index: 2; }
