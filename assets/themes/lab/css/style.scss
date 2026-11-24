@@ -3,13 +3,17 @@
 
 $ink: #000;
 $muted: #000;
-$paper: #d9dad5;
-$mist: #cdd0ca;
-$line: #a9aba6;
+$paper: #d3d3d3;
+$mist: #c4c4c4;
+$line: #9e9e9e;
 $accent: #000;
 $accent-dark: #000;
 
-:root { --content-font-size: 15px; }
+:root {
+  --content-font-size: 15px;
+  --rlcd-grain: url("/assets/images/rlcd-grain.svg");
+  --rlcd-cells: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .055) .45px, transparent .8px);
+}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -17,11 +21,15 @@ body {
   margin: 0;
   color: $ink;
   background-color: $paper;
+  // Static surface layers sit behind the content, keeping black text crisp.
   background-image:
-    linear-gradient(118deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0) 34%, rgba(0, 0, 0, .025) 72%, rgba(255, 255, 255, .08)),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, .035) 0 1px, rgba(0, 0, 0, .018) 1px 2px, transparent 2px 4px);
+    var(--rlcd-grain),
+    var(--rlcd-cells),
+    radial-gradient(ellipse at 25% 8%, rgba(255, 255, 255, .28), transparent 65%),
+    radial-gradient(ellipse at 48% 40%, transparent 46%, rgba(0, 0, 0, .085) 100%),
+    linear-gradient(135deg, #d5d5d5, #cecece 58%, #c5c5c5);
   background-attachment: fixed;
-  background-size: 100% 100%, 4px 100%;
+  background-size: 192px 192px, 3px 3px, 100% 100%, 100% 100%, 100% 100%;
   font-family: "DotGothic16", ui-monospace, monospace;
   font-size: var(--content-font-size);
   line-height: 1.65;
@@ -73,7 +81,7 @@ a:hover, a:focus { color: $accent; }
 .signal-card p, .research-areas p { color: $muted; font-size: var(--content-font-size); line-height: 1.55; margin: 9px 0 0; }
 
 .section-block { display: grid; grid-template-columns: 25% 1fr; gap: 40px; padding: 46px 0; }
-.section-block--tint { background: $mist; box-shadow: 0 0 0 100vmax $mist; clip-path: inset(0 -100vmax); }
+.section-block--tint { background: rgba(0, 0, 0, .035); box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .035); clip-path: inset(0 -100vmax); }
 .section-content { max-width: 760px; }
 .section-content h2, .research-areas h2, .contact-grid h2 { font-family: "DotGothic16", ui-monospace, monospace; font-size: var(--content-font-size); font-weight: 400; letter-spacing: -.025em; line-height: 1.1; margin: 0 0 7px; }
 .about-copy p, .contact-copy p { color: $muted; font-size: var(--content-font-size); line-height: 1.75; margin: 0 0 18px; }
@@ -161,6 +169,10 @@ a:hover, a:focus { color: $accent; }
 .join-book { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0fr); margin: 0 0 46px; min-height: 570px; perspective: 1800px; transition: grid-template-columns .55s cubic-bezier(.2, .72, .2, 1); }
 .join-book.is-open { grid-template-columns: minmax(340px, .88fr) minmax(440px, 1.12fr); }
 .join-page { background: $paper; border: 1px solid $ink; min-width: 0; }
+.site-header, .join-page {
+  background-image: var(--rlcd-grain), var(--rlcd-cells), linear-gradient(115deg, rgba(255, 255, 255, .11), transparent 70%);
+  background-size: 192px 192px, 3px 3px, 100% 100%;
+}
 .join-page--index { padding: 26px 28px; position: relative; z-index: 2; }
 .join-page--detail { border-left: 0; opacity: 0; overflow: hidden; pointer-events: none; position: relative; transform: rotateY(-86deg); transform-origin: left center; transition: opacity .24s ease, transform .55s cubic-bezier(.2, .72, .2, 1); }
 .join-page--detail::before { background: linear-gradient(90deg, rgba(0, 0, 0, .14), rgba(0, 0, 0, 0)); content: ""; inset: 0 auto 0 0; pointer-events: none; position: absolute; width: 18px; z-index: 2; }
@@ -230,4 +242,12 @@ a:hover, a:focus { color: $accent; }
   .join-book { margin-bottom: 33px; }
   .join-page__header, .join-role small, .join-role__action, .join-index__note, .join-description__meta { font-size: 12px; }
   .footer-wrap { flex-direction: column; }
+}
+
+@media (forced-colors: active) {
+  body, .site-header, .join-page { background-image: none; }
+}
+@media print {
+  body, .site-header, .join-page { background: #fff; }
+  .section-block--tint { background: transparent; box-shadow: none; }
 }
