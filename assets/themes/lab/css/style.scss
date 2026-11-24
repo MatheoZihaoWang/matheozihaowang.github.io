@@ -11,6 +11,13 @@ $accent-dark: #000;
 $lcd-active: #464946;
 $lcd-active-hover: #373a38;
 $lcd-reverse-ink: #c8cac6;
+$dark-paper: #181a18;
+$dark-surface: #222521;
+$dark-mist: #2d302c;
+$dark-line: #555a53;
+$dark-ink: #d7dbd2;
+$dark-muted: #bdc2b8;
+$dark-strong: #edf0e8;
 $rlcd-grain: url("/assets/images/rlcd-grain.svg");
 $rlcd-rows: linear-gradient(to bottom, rgba(0, 0, 0, .045) 0, rgba(0, 0, 0, .045) .25px, transparent .25px);
 $rlcd-columns: linear-gradient(to right, rgba(0, 0, 0, .035) 0, rgba(0, 0, 0, .035) .25px, transparent .25px);
@@ -84,10 +91,13 @@ a:hover, a:focus { color: $accent; }
 .site-nav a:hover { color: $accent; }
 .site-nav .nav-scholar { color: $accent-dark; border-bottom: 1px solid $accent-dark; padding-bottom: 2px; }
 .nav-toggle { display: none; background: transparent; border: 0; color: $ink; font: inherit; font-weight: 600; padding: 8px 0; }
+.display-controls { align-items: center; display: inline-flex; gap: 10px; }
 .language-switch { align-items: center; border-left: 1px solid $line; display: inline-flex; gap: 6px; margin-left: 2px; padding-left: 16px; }
 .language-switch button { appearance: none; background: transparent; border: 0; color: $ink; cursor: pointer; font: inherit; font-size: 12px; font-weight: 400; opacity: .48; padding: 3px 0; }
 .language-switch button:hover, .language-switch button:focus-visible { opacity: 1; outline: 1px solid $ink; outline-offset: 3px; }
 .language-switch button.is-active { font-weight: 800; opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+.theme-toggle { align-items: center; appearance: none; background: transparent; border: 1px solid $line; border-radius: 50%; color: $ink; cursor: pointer; display: inline-flex; font: inherit; font-size: 16px; height: 28px; justify-content: center; line-height: 1; padding: 0 0 1px; width: 28px; }
+.theme-toggle:hover, .theme-toggle:focus-visible { background: $mist; border-color: $ink; outline: 0; }
 html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft YaHei", ui-monospace, monospace; }
 
 .hero { padding: 24px 0 29px; max-width: 1000px; }
@@ -266,6 +276,125 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
 .footer-wrap p { margin: 0; }
 .site-footer a:hover { color: $accent; }
 
+// Full-screen reflective inverse mode: near-black substrate and restrained
+// luminance, preserving the same fixed physical grid rather than OLED black.
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="dark"] body {
+  color: $dark-ink;
+  background-color: $dark-paper;
+  background-image:
+    radial-gradient(ellipse at 25% 8%, rgba(255, 255, 255, .075), transparent 65%),
+    radial-gradient(ellipse at 48% 40%, transparent 46%, rgba(0, 0, 0, .27) 100%),
+    linear-gradient(135deg, #1d201c, #181a18 58%, #121411);
+}
+html[data-theme="dark"] body::after {
+  background-image:
+    $rlcd-grain,
+    linear-gradient(to bottom, rgba(255, 255, 255, .045) 0, rgba(255, 255, 255, .045) .25px, transparent .25px),
+    linear-gradient(to right, rgba(255, 255, 255, .035) 0, rgba(255, 255, 255, .035) .25px, transparent .25px);
+  mix-blend-mode: screen;
+  opacity: .72;
+}
+html[data-theme="dark"] body > main,
+html[data-theme="dark"] body > .site-footer {
+  text-shadow: 0 var(--rlcd-response-y) .35px unquote("rgba(255, 255, 255, var(--rlcd-response-alpha))");
+}
+html[data-theme="dark"] main h1,
+html[data-theme="dark"] main h2,
+html[data-theme="dark"] main h3,
+html[data-theme="dark"] main h4,
+html[data-theme="dark"] main h5,
+html[data-theme="dark"] main h6,
+html[data-theme="dark"] .site-mark,
+html[data-theme="dark"] .site-nav a,
+html[data-theme="dark"] .site-nav .nav-scholar,
+html[data-theme="dark"] .nav-toggle,
+html[data-theme="dark"] .language-switch button,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .hero__eyebrow,
+html[data-theme="dark"] .section-kicker,
+html[data-theme="dark"] .hero h1,
+html[data-theme="dark"] .page-hero h1,
+html[data-theme="dark"] .hero h1 span,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .publication-year,
+html[data-theme="dark"] .research-areas span,
+html[data-theme="dark"] .thrust-select,
+html[data-theme="dark"] .thrust-close,
+html[data-theme="dark"] .bibliography li::before,
+html[data-theme="dark"] .bibliography a,
+html[data-theme="dark"] .join-hero h1,
+html[data-theme="dark"] .join-role,
+html[data-theme="dark"] .join-close { color: $dark-ink; }
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus,
+html[data-theme="dark"] .site-nav a:hover,
+html[data-theme="dark"] .publication-item h3 a:hover,
+html[data-theme="dark"] .site-footer a:hover { color: $dark-strong; }
+html[data-theme="dark"] .hero__lead,
+html[data-theme="dark"] .page-hero > p,
+html[data-theme="dark"] .signal-card p,
+html[data-theme="dark"] .research-areas p,
+html[data-theme="dark"] .about-copy p,
+html[data-theme="dark"] .contact-copy p,
+html[data-theme="dark"] .publication-item p,
+html[data-theme="dark"] .bibliography li,
+html[data-theme="dark"] .publication-note,
+html[data-theme="dark"] .contact-grid p,
+html[data-theme="dark"] .site-footer { color: $dark-muted; }
+html[data-theme="dark"] .site-header { background: rgba($dark-paper, .94); }
+html[data-theme="dark"] .join-page { background: $dark-surface; }
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .join-page {
+  background-image: linear-gradient(115deg, rgba(255, 255, 255, .045), transparent 70%);
+}
+html[data-theme="dark"] .section-block--tint {
+  background: rgba(255, 255, 255, .025);
+  box-shadow: 0 0 0 100vmax rgba(255, 255, 255, .025);
+}
+html[data-theme="dark"] .button--primary,
+html[data-theme="dark"] .join-role.is-active {
+  color: #20231f;
+  background: linear-gradient(180deg, #c7cbc3, #adb2a8);
+  border-color: #d3d7cf;
+  text-shadow: none;
+}
+html[data-theme="dark"] .button--primary:hover {
+  color: #181a18;
+  background: linear-gradient(180deg, #d3d7ce, #babfb5);
+  border-color: $dark-strong;
+}
+html[data-theme="dark"] .button--secondary { color: $dark-ink; border-color: $dark-ink; }
+html[data-theme="dark"] .button--secondary:hover,
+html[data-theme="dark"] .theme-toggle:hover,
+html[data-theme="dark"] .theme-toggle:focus-visible,
+html[data-theme="dark"] .join-role:hover,
+html[data-theme="dark"] .join-role:focus-visible,
+html[data-theme="dark"] .is-open .thrust-select.is-active { background: $dark-mist; }
+html[data-theme="dark"] .artifact-links a { background: transparent; }
+html[data-theme="dark"] .artifact-links img {
+  filter: grayscale(1) invert(1) contrast(.68) brightness(.84);
+  mix-blend-mode: normal;
+  opacity: .88;
+}
+html[data-theme="dark"] .bibliography a { border-bottom-color: rgba(255, 255, 255, .4); }
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-mark--avatar img,
+html[data-theme="dark"] .language-switch,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .signal-grid,
+html[data-theme="dark"] .signal-card,
+html[data-theme="dark"] .publication-item,
+html[data-theme="dark"] .research-areas article,
+html[data-theme="dark"] .thrust-content,
+html[data-theme="dark"] .thrust-panel,
+html[data-theme="dark"] .bibliography li,
+html[data-theme="dark"] .contact-grid,
+html[data-theme="dark"] .join-page,
+html[data-theme="dark"] .join-page__header,
+html[data-theme="dark"] .join-group,
+html[data-theme="dark"] .site-footer { border-color: $dark-line; }
+
 @media (max-width: 720px) {
   :root { --content-font-size: 13px; }
   .site-shell { width: min(100% - 32px, 1160px); }
@@ -273,7 +402,10 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
   .nav-toggle { display: block; }
   .site-nav { display: none; position: absolute; top: 64px; left: -16px; right: -16px; background: $paper; border-bottom: 1px solid $line; box-shadow: 0 13px 24px rgba(0, 0, 0, .08); padding: 15px 16px 21px; flex-direction: column; align-items: flex-start; gap: 14px; }
   .site-nav.is-open { display: flex; }
-  .language-switch { border-left: 0; border-top: 1px solid $line; margin: 4px 0 0; padding: 12px 0 0; }
+  .display-controls { border-top: 1px solid $line; margin: 4px 0 0; padding: 12px 0 0; width: 100%; }
+  .language-switch { border-left: 0; margin: 0; padding: 0; }
+  html[data-theme="dark"] .display-controls { border-color: $dark-line; }
+  html[data-theme="dark"] .site-nav { background: $dark-paper; border-color: $dark-line; box-shadow: 0 13px 24px rgba(0, 0, 0, .32); }
   .hero, .page-hero { padding: 18px 0 19px; }
   .hero h1, .page-hero h1 { font-size: clamp(21px, 5.8vw, 29px); }
   .hero__lead, .page-hero > p { font-size: var(--content-font-size); }

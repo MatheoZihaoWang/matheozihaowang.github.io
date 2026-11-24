@@ -15,6 +15,8 @@
     'Language': '语言',
     'English': '英文',
     'Chinese': '中文',
+    'Switch to dark display': '切换至暗色显示',
+    'Switch to light display': '切换至亮色显示',
     'Zihao Wang | AI for Science and Healthcare': '王子豪 | 科学与医疗人工智能',
     'Research | Zihao Wang': '研究 | 王子豪',
     'Join Us | Zihao Wang': '加入我们 | 王子豪',
