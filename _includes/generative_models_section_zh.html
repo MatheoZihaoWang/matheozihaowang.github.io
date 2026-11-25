@@ -1,0 +1,44 @@
+<article class="gm-content" lang="zh-CN" id="gm-zh">
+<header id="zh-overview"><p class="gm-eyebrow">研究方向 / 生成模型</p>
+<h2 class="gm-title">从随机动力学，走向可靠推断。</h2>
+<p class="gm-standfirst">我们研究如何将共享信息、学习到的动态规律与物理要求融入生成过程，让生成模型成为解决科学问题的工具。</p></header>
+<section class="gm-section gm-intro"><h2>理解并塑造生成的过程</h2>
+<p>生成模型从数据中学习统计规律，并据此产生新的样本。对于扩散模型，生成是一个逐步演化的过程：模型从带有噪声的状态出发，经过多次更新，逐渐形成有结构的结果。这一过程也为引导生成提供了切入点。</p>
+<p>我们的研究关注：如何让这种引导与具体问题建立联系？转换医学影像时，哪些解剖信息应当保留？跨越不同成像模态时，变化应该如何发生？从有限观测重建未知对象时，结果又应当如何解释实际测量？这些问题将生成学习与统计推断、科学建模连接起来。</p>
+<figure class="gm-pixel-figure"><div class="gm-overview-desktop"><div class="gm-figure-viewport" tabindex="0" aria-label="三个互补的研究问题"><img src="assets/overview_zh.png" width="760" height="310" alt="三个互补的研究问题" loading="lazy"></div></div><div class="gm-overview-mobile"><img src="assets/overview_zh_panel_1.png" width="250" height="310" style="width:250px" alt="共享信息" loading="lazy"><img src="assets/overview_zh_panel_2.png" width="250" height="310" style="width:250px" alt="学习生成动力学" loading="lazy"><img src="assets/overview_zh_panel_3.png" width="252" height="310" style="width:252px" alt="输出端的要求" loading="lazy"></div><figcaption>三个互补问题贯穿这一研究方向：保留共享信息、设计变化过程、让结果与观测相联系。它们对应不同的研究方法，各自具有不同的训练和推断条件。</figcaption></figure>
+</section>
+<section class="gm-section" id="zh-questions">
+<p class="gm-kicker">信息</p>
+<h2>在不同的外观中，保留共享信息。</h2>
+<p>同一解剖结构在两种医学扫描中，可能呈现完全不同的明暗对比。像素值会改变，组织之间的局部统计关系却仍能提供线索。我们利用局部互信息，将这些共享关系融入扩散生成过程，引导图像向目标模态转变，同时尽量保留来自输入的结构信息。</p><p>在局部统计关系能够充分迁移的条件下，仅使用目标模态图像训练的模型，就可以处理训练中未见过的源模态。这也使已有分析工具有机会服务于新的影像输入，例如将转换后的影像用于脑部结构分割。<a class="gm-citation" href="#zh-paper-1">[1]</a></p>
+</section>
+<section class="gm-section" id="zh-dynamics">
+<p class="gm-kicker">动力学</p>
+<h2>让不同区域，按照不同节奏变化。</h2>
+<p>图像的不同位置和通道，可能需要不同程度、不同速度的变化。我们将可学习的空间变化规律引入扩散动力学，使各个区域可以遵循不同的转换进程，从而更灵活地表达源观测与目标表示之间的关系。</p><p>这类转换规律由配对图像学习，并在 MRI、雷达到光学影像转换和工业检测中进行检验。我们将它与连续时间随机模型及数值采样器相联系，探索如何在保持结构对应关系的同时，减少生成所需的去噪步骤。<a class="gm-citation" href="#zh-paper-2">[2]</a></p>
+</section>
+<section class="gm-section" id="zh-constraints">
+<p class="gm-kicker">约束</p>
+<h2>从结果必须满足的要求，反推生成状态。</h2>
+<p>科学重建从观测出发。例如，一幅 CT 重建图像经过成像模型计算后，应当能够解释实际记录的 X 射线投影。我们利用后向随机微分方程（BSDE），将输出端的要求写入终端条件，反向推断预训练生成模型内部的合适状态。</p><p>预训练先验保持冻结，重建过程将其学习到的图像规律与观测模型相结合。对于所构造的 BSDE，我们在给定正则性假设下建立解的存在性与唯一性，并通过稀疏视角 CT 展示相应的数值实现。<a class="gm-citation" href="#zh-paper-3">[3]</a></p>
+</section>
+<section class="gm-section" id="zh-stochastic"><h2>从随机信息的角度理解 SDE 与 BSDE</h2>
+<p>SDE 给定初始状态，以及漂移和随机扰动如何推动状态变化。BSDE 给定终端随机变量与驱动项，再求出适应当前信息的一对过程 (Y, Z)：Y 表示随时间变化的值，Z 描述新到来的随机信息如何更新这个值。</p><p>区别在于给定什么、需要求解什么。两者的信息都随时间向前揭示；从终端条件反推，并不意味着过程可以提前知道未来噪声。</p>
+<figure class="gm-pixel-figure"><h3>同一组噪声，两种不同的随机量</h3><div class="gm-figure-viewport" tabindex="0" aria-label="同一组噪声，两种不同的随机量"><img src="assets/sde_bsde_paths_zh.png" width="760" height="356" alt="同一组噪声，两种不同的随机量" loading="lazy"></div><figcaption>取 T = 2、BSDE 驱动项为零的布朗运动示例。左右使用同样的五组噪声。终端关系为 Y(T) = X(T)^2，不同路径的实际终值可以不同。</figcaption></figure>
+<div class="gm-stochastic-subsection"><h3>把当前值理解为条件期望</h3><p>对于 dX = dW、终端关系 Y(T) = X(T)^2，零驱动 BSDE 的精确解为 Y(t) = E[X(T)^2 | F(t)] = X(t)^2 + (T - t)，且 Z(t) = 2X(t)。其中 T - t 表示尚未揭示的噪声对条件期望的贡献。</p></div>
+<figure class="gm-pixel-figure"><h3>一个两步信息树</h3><div class="gm-figure-viewport" tabindex="0" aria-label="一个两步信息树"><img src="assets/sde_bsde_tree_zh.png" width="760" height="388" alt="一个两步信息树" loading="lazy"></div><figcaption>每个分支以相同概率增加 +1 或 -1。左图向前计算 X；右图给定终端值 X(2)^2，再逐层取条件平均。竖向位置只用于区分不同历史，不代表数值大小。</figcaption></figure>
+<p>Z 也需要一并求出。这个两步示例中，Z(0) = 0；第一步之后，在 X(1) = -1 的分支上 Z 为 -2，在 X(1) = +1 的分支上 Z 为 +2。</p><p>这个示例用于解释随机分析思想。论文使用与 score 相关的驱动项和具体任务的终端条件；其中的 BSDE 与扩散采样使用的反向时间 SDE 是不同的数学构造。<a class="gm-citation" href="#zh-paper-3">[3]</a></p></section>
+<section class="gm-section" id="zh-frozen-prior"><h2>将终端要求连接到冻结的生成先验</h2>
+<figure class="gm-pixel-figure"><div class="gm-figure-viewport" tabindex="0" aria-label="三个互补的研究问题"><img src="assets/bsde_endpoint_zh.png" width="760" height="332" alt="三个互补的研究问题" loading="lazy"></div><figcaption>从输出要求出发，推断合适的带噪先验状态，再通过冻结模型生成重建结果。在 CT 实现中，测量一致性通过最终图像上的数值优化实现。</figcaption></figure>
+<aside class="gm-technical"><h3>这里的“后向”是什么意思？</h3><p>这里的 BSDE 是一个终端值推断问题，与扩散模型通常用于采样的反向时间 SDE 是不同的数学构造。理论结论针对满足假设的精确 BSDE 解；CT 实现通过最终测量误差进行数值优化，并不意味着每一次数值重建或生成样本都严格满足测量等式。</p></aside></section>
+<section class="gm-section" id="zh-references"><h2>支撑这一研究方向的代表工作</h2><ol class="gm-reference-list">
+<li id="zh-paper-1">
+<a class="gm-reference-title" href="https://doi.org/10.1109/TMI.2024.3382043" target="_blank" rel="noopener">Mutual Information Guided Diffusion for Zero-shot Cross-modality Medical Image Translation</a>
+<span class="gm-venue">IEEE Transactions on Medical Imaging, 2024</span><span class="gm-reference-note">目标模态训练；源模态不参与训练。</span></li>
+<li id="zh-paper-2">
+<a class="gm-reference-title" href="https://arxiv.org/abs/2601.18623" target="_blank" rel="noopener">Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation</a>
+<span class="gm-venue">ICLR 2026</span><span class="gm-reference-note">配对数据训练；学习跨模态动力学与采样。</span></li>
+<li id="zh-paper-3">
+<a class="gm-reference-title" href="https://laplacelab.github.io/BSDEDiffusion/" target="_blank" rel="noopener">Backward SDEs-based Diffusion for Physics-Constrained Generation</a>
+<span class="gm-venue">ICML 2026</span><span class="gm-reference-note">冻结预训练先验；终端条件驱动的反演与 CT 重建。</span></li>
+</ol></section><footer class="gm-footer">Zihao Wang / 生成模型研究</footer></article>
