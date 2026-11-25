@@ -81,6 +81,7 @@
     'Open +': '展开 +',
     'Close −': '收起 −',
     'Close research overview and restore all three columns': '收起研究概述并恢复三列布局',
+    'Learn More': '了解更多',
     'Selected publications': '代表论文',
     'BlochShift: Physics-guided diffusion with Bloch-based drift for MRI image translation.': 'BlochShift：用于 MRI 图像转换的 Bloch 漂移物理引导扩散模型。',
     'Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection.': '用于数字金融欺诈检测的多模态增强图迁移学习。',

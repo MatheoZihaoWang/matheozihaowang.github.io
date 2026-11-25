@@ -199,6 +199,7 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
 .thrust-panel .thrust-content { border: 0; margin: 0; padding: 0; }
 .thrust-panel h2 { line-height: 1.35; margin: 0 0 18px; }
 .thrust-panel p { margin: 0 0 16px; line-height: 1.65; }
+.thrust-learn-more { margin-top: 3px; }
 @media (max-width: 720px) {
   .thrust-list { grid-template-columns: minmax(0, 1fr); gap: 22px; }
   .research-areas.has-thrust-reader.is-open { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 12px; }
