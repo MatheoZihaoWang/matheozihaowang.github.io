@@ -1,0 +1,82 @@
+---
+layout: default
+title: "Precision Imaging and Medical AI | Zihao Wang"
+description: "Research on image reconstruction, anatomical uncertainty and clinical interpretation."
+---
+
+<div class="gm-overview-page">
+  <article class="gm-content" lang="en">
+    <header>
+      <p class="gm-eyebrow">Research / Precision Imaging and Medical AI</p>
+      <h1 class="gm-title">What can we infer from a medical scan?</h1>
+      <p class="gm-standfirst">A CT scanner records X-ray measurements. Reconstructing an image, locating an anatomical boundary and describing a change since the last scan each require a different inference. We study how to check the evidence at each step.</p>
+    </header>
+    <section class="gm-section">
+      <p class="gm-kicker">Reconstruction</p>
+      <h2>Which images agree with the measurements?</h2>
+      <p>In sparse-view CT, the scanner measures the body from a limited set of angles. Several images can explain those projections while differing in details between the measured views. Our work on backward stochastic differential equations combines a frozen diffusion prior with the CT acquisition model. Projecting a candidate image back into measurement space lets us check its agreement with the recorded data.</p>
+      <a href="https://laplacelab.github.io/BSDEDiffusion/">Sparse-view CT reconstruction · ICML 2026</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">Anatomy</p>
+      <h2>Where is the boundary of the cochlea?</h2>
+      <p>The cochlea is a small spiral structure whose boundaries can be difficult to resolve on clinical CT. We combine a model of cochlear shape with local image intensities to estimate a distribution over plausible boundaries. Its spread tells us where the scan constrains the segmentation tightly and where several contours remain plausible.</p>
+      <a href="https://doi.org/10.1016/j.media.2021.102268">Bayesian cochlear segmentation · Medical Image Analysis</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">Imaging contrast</p>
+      <h2>What should stay in place when contrast changes?</h2>
+      <p>The same tissue can appear bright in one MRI sequence and dark in another. For image translation, the challenge is to change contrast while preserving the patient’s anatomy. Our mutual-information-guided diffusion method uses statistical relationships between local image regions to guide generation, including when the source modality was absent from training.</p>
+      <a href="https://doi.org/10.1109/TMI.2024.3382043">Cross-modality image translation · IEEE TMI</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">Clinical interpretation</p>
+      <h2>Can a model identify a finding and track how it changes?</h2>
+      <p>In head CT after hypoxic ischemic injury, we studied whether a model could detect severe cerebral edema. Inspecting attention maps alongside correctly and incorrectly classified scans helped us examine which regions influenced its predictions.</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40414341/">Severe cerebral edema detection · Resuscitation</a>
+    </section>
+    <section class="gm-section">
+      <h2>Reading two scans together</h2>
+      <p>Follow-up imaging poses a different question. A report that correctly names a finding can still get its direction of change wrong. CT-ΔBench evaluates whether vision-language models can compare two 3D CT studies and describe interval changes. This makes temporal accuracy an explicit target for evaluation.</p>
+      <a href="https://arxiv.org/abs/2608.11534">Longitudinal CT difference reporting · COLM 2026</a>
+    </section>
+    <a href="/Research/">Back to research</a>
+  </article>
+  <article class="gm-content" lang="zh-CN">
+    <header>
+      <p class="gm-eyebrow">研究方向 / 精准成像与医疗人工智能</p>
+      <h1 class="gm-title">一幅医学影像能告诉我们什么？</h1>
+      <p class="gm-standfirst">CT 扫描仪记录的是 X 射线测量值。从这些数据重建图像、勾画解剖边界，再到判断病灶与上次检查相比有何变化，每一步都涉及推断。我们研究如何在每一步检验推断所依据的证据。</p>
+    </header>
+    <section class="gm-section">
+      <p class="gm-kicker">图像重建</p>
+      <h2>哪些图像与实测数据相符？</h2>
+      <p>稀疏角度 CT 只从有限方向采集投影。多幅图像都可能解释这些测量，却在未采样方向的细节上有所不同。我们利用倒向随机微分方程，将冻结的扩散先验与 CT 采集模型结合。把候选图像重新投影到测量空间，就可以用实际记录的数据检验重建结果。</p>
+      <a href="https://laplacelab.github.io/BSDEDiffusion/">稀疏角度 CT 重建 · ICML 2026</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">解剖结构</p>
+      <h2>耳蜗的边界在哪里？</h2>
+      <p>耳蜗细小且呈螺旋形，临床 CT 上的部分边界很难辨清。我们将耳蜗形状模型与局部图像灰度结合，估计一组可能轮廓的概率分布。分布集中的位置意味着图像对边界提供了较强约束；分布较宽的位置，则可能存在多种合理的勾画结果。</p>
+      <a href="https://doi.org/10.1016/j.media.2021.102268">耳蜗分割的贝叶斯推断 · Medical Image Analysis</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">影像对比度</p>
+      <h2>改变对比度时，哪些结构应当保留？</h2>
+      <p>同一组织在一种 MRI 序列上可以呈高信号，在另一种序列上却呈低信号。跨模态转换需要改变组织对比度，同时保留这位患者的解剖结构。我们用局部图像区域之间的互信息引导扩散生成，并研究这种方法在源模态未参与训练时的表现。</p>
+      <a href="https://doi.org/10.1109/TMI.2024.3382043">跨模态医学图像转换 · IEEE TMI</a>
+    </section>
+    <section class="gm-section">
+      <p class="gm-kicker">临床解读</p>
+      <h2>模型能否识别异常，并描述其变化？</h2>
+      <p>在缺氧缺血性脑损伤后的头颅 CT 研究中，我们考察了模型识别重度脑水肿的能力。结合判断正确和错误的病例查看注意力图，可以分析哪些脑区影响了模型的预测。</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40414341/">重度脑水肿检测 · Resuscitation</a>
+    </section>
+    <section class="gm-section">
+      <h2>把前后两次检查放在一起读</h2>
+      <p>随访影像提出了另一个问题。即便报告正确识别了病灶，也可能把进展写成好转。CT-ΔBench 评估视觉语言模型能否比较前后两次三维 CT 检查并描述其间的变化，把变化方向是否准确纳入评价。</p>
+      <a href="https://arxiv.org/abs/2608.11534">纵向 CT 差异报告 · COLM 2026</a>
+    </section>
+    <a href="/Research/">返回研究方向</a>
+  </article>
+</div>

@@ -19,6 +19,8 @@
     'Switch to light display': '切换至亮色显示',
     'Zihao Wang | AI for Science and Healthcare': '王子豪 | 科学与医疗人工智能',
     'Research | Zihao Wang': '研究 | 王子豪',
+    'Precision Imaging and Medical AI | Zihao Wang': '精准成像与医疗人工智能 | 王子豪',
+    'Research on image reconstruction, anatomical uncertainty and clinical interpretation.': '关于图像重建、解剖结构不确定性和临床解读的研究。',
     'Generative models | Zihao Wang': '生成模型 | 王子豪',
     'Join Us | Zihao Wang': '加入我们 | 王子豪',
     'Contact | Zihao Wang': '联系 | 王子豪',
