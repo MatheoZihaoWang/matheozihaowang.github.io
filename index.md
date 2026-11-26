@@ -132,11 +132,28 @@ categories:
   </div>
 </section>
 
-<section class="section-block" id="contact">
-  <div class="section-kicker">Work with me</div>
-  <div class="section-content contact-copy">
-    <h2>Interested in a research collaboration?</h2>
-    <p>I welcome conversations with students, clinicians, researchers, and industry partners working at the intersection of generative AI, imaging, and decision systems.</p>
-    <p><span class="email-obfuscated">zihao [.] wang@ieee.org</span> &nbsp;·&nbsp; <a class="text-link" href="https://scholar.google.com/citations?user=A_zik4EAAAAJ&amp;hl=en">Google Scholar</a></p>
+<section class="section-block" id="support">
+  <div class="section-kicker">SPONSOR &amp; SUPPORTOR</div>
+  <div class="section-content">
+    <div class="support-grid" aria-label="Sponsors and supporters">
+      <a class="support-mark" href="https://www.nsf.gov/" aria-label="U.S. National Science Foundation">
+        <span class="pixel-logo" data-pixel-mark="nsf" aria-hidden="true"></span>
+        <span class="support-label">U.S. National Science Foundation</span>
+      </a>
+      <a class="support-mark" href="https://nairrpilot.org/" aria-label="National Artificial Intelligence Research Resource Pilot">
+        <span class="pixel-logo" data-pixel-mark="nairr" aria-hidden="true"></span>
+        <span class="support-label">NAIRR Pilot</span>
+      </a>
+      <a class="support-mark" href="https://www.nih.gov/" aria-label="National Institutes of Health">
+        <span class="pixel-logo" data-pixel-mark="nih" aria-hidden="true"></span>
+        <span class="support-label">National Institutes of Health</span>
+      </a>
+      <a class="support-mark" href="https://astecindustries.com/" aria-label="Astec Industries">
+        <span class="pixel-logo" data-pixel-mark="astec" aria-hidden="true"></span>
+        <span class="support-label">Astec Industries</span>
+      </a>
+    </div>
   </div>
 </section>
+
+<script src="/assets/themes/lab/js/sponsor-pixels.js?v=20261125-1" defer></script>
