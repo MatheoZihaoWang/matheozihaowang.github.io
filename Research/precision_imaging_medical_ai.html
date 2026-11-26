@@ -15,18 +15,21 @@ description: "Research on image reconstruction, anatomical uncertainty and clini
       <p class="gm-kicker">Reconstruction</p>
       <h2>Which images agree with the measurements?</h2>
       <p>In sparse-view CT, the scanner measures the body from a limited set of angles. Several images can explain those projections while differing in details between the measured views. Our work on backward stochastic differential equations combines a frozen diffusion prior with the CT acquisition model. Projecting a candidate image back into measurement space lets us check its agreement with the recorded data.</p>
+      {% include medical_ct.html left="Candidate A" right="Candidate B" caption="Two-view CT schematic. Each filled square contributes one unit of attenuation. Add across either row, then down either column: both candidates give (1, 1) in both views. A diagonal view could distinguish them. This is why we check a reconstruction against the acquired projections and use a learned prior to constrain what those views leave open." %}
       <a href="https://laplacelab.github.io/BSDEDiffusion/">Sparse-view CT reconstruction · ICML 2026</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">Anatomy</p>
       <h2>Where is the boundary of the cochlea?</h2>
       <p>The cochlea is a small spiral structure whose boundaries can be difficult to resolve on clinical CT. We combine a model of cochlear shape with local image intensities to estimate a distribution over plausible boundaries. Its spread tells us where the scan constrains the segmentation tightly and where several contours remain plausible.</p>
+      {% include medical_cochlea.html left="Visible edge" right="Plausible contours" caption="Schematic of one cochlear boundary. Follow the spiral outward. Where the edge is clear on the left, the three illustrative contours on the right overlap. Near the faint outer turn they fan apart. This local spread is what a single best contour hides and a Bayesian shape estimate can express." %}
       <a href="https://doi.org/10.1016/j.media.2021.102268">Bayesian cochlear segmentation · Medical Image Analysis</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">Imaging contrast</p>
       <h2>What should stay in place when contrast changes?</h2>
       <p>The same tissue can appear bright in one MRI sequence and dark in another. For image translation, the challenge is to change contrast while preserving the patient’s anatomy. Our mutual-information-guided diffusion method uses statistical relationships between local image regions to guide generation, including when the source modality was absent from training.</p>
+      {% include medical_mri.html left="Source contrast" right="Target contrast" caption="Cross-modality translation schematic. Dot density represents signal intensity. Follow the two central cavities: their signal changes from sparse to dense while their outlines stay aligned. Local mutual information guides diffusion by comparing intensity patterns in corresponding neighborhoods, allowing a boundary to remain informative when its contrast reverses." %}
       <a href="https://doi.org/10.1109/TMI.2024.3382043">Cross-modality image translation · IEEE TMI</a>
     </section>
     <section class="gm-section">
@@ -52,18 +55,21 @@ description: "Research on image reconstruction, anatomical uncertainty and clini
       <p class="gm-kicker">图像重建</p>
       <h2>哪些图像与实测数据相符？</h2>
       <p>稀疏角度 CT 只从有限方向采集投影。多幅图像都可能解释这些测量，却在未采样方向的细节上有所不同。我们利用倒向随机微分方程，将冻结的扩散先验与 CT 采集模型结合。把候选图像重新投影到测量空间，就可以用实际记录的数据检验重建结果。</p>
+      {% include medical_ct.html left="候选重建 A" right="候选重建 B" caption="双角度 CT 原理示意。每个填充方格代表一个单位的衰减。先逐行求和，再逐列求和：两幅图在这两个方向上的投影都是 (1, 1)，尽管内部结构不同。增加一个斜向投影就有机会区分它们。这说明重建既要接受实测投影的检验，也需要学习到的先验来约束测量尚不能确定的细节。" %}
       <a href="https://laplacelab.github.io/BSDEDiffusion/">稀疏角度 CT 重建 · ICML 2026</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">解剖结构</p>
       <h2>耳蜗的边界在哪里？</h2>
       <p>耳蜗细小且呈螺旋形，临床 CT 上的部分边界很难辨清。我们将耳蜗形状模型与局部图像灰度结合，估计一组可能轮廓的概率分布。分布集中的位置意味着图像对边界提供了较强约束；分布较宽的位置，则可能存在多种合理的勾画结果。</p>
+      {% include medical_cochlea.html left="可辨认的边缘" right="可能的轮廓" caption="耳蜗边界示意。沿螺旋从内向外看：左图边缘清楚的地方，右图三条示例轮廓几乎重合；到外圈边缘变得模糊的地方，轮廓逐渐分开。只画一条最优轮廓会掩盖这种局部差异，贝叶斯形状估计则可以表达它。" %}
       <a href="https://doi.org/10.1016/j.media.2021.102268">耳蜗分割的贝叶斯推断 · Medical Image Analysis</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">影像对比度</p>
       <h2>改变对比度时，哪些结构应当保留？</h2>
       <p>同一组织在一种 MRI 序列上可以呈高信号，在另一种序列上却呈低信号。跨模态转换需要改变组织对比度，同时保留这位患者的解剖结构。我们用局部图像区域之间的互信息引导扩散生成，并研究这种方法在源模态未参与训练时的表现。</p>
+      {% include medical_mri.html left="源模态对比度" right="目标模态对比度" caption="跨模态转换原理示意。点越密表示信号越强。对照中央两处腔隙：同一位置由稀疏点变为密集点，轮廓仍能对齐。局部互信息比较对应邻域内的强度分布关系，即使边界两侧的明暗反转，仍能利用它们共有的结构信息引导扩散生成。" %}
       <a href="https://doi.org/10.1109/TMI.2024.3382043">跨模态医学图像转换 · IEEE TMI</a>
     </section>
     <section class="gm-section">
