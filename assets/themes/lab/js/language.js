@@ -20,7 +20,7 @@
     'Zihao Wang | AI for Science and Healthcare': '王子豪 | 科学与医疗人工智能',
     'Research | Zihao Wang': '研究 | 王子豪',
     'AI meets Sci&Engineering | Zihao Wang': '人工智能与科学工程 | 王子豪',
-    'How observations and physical constraints guide learning in astronomy, dynamical systems, electronics and nanophotonics.': '天文观测、动力系统、电子工程与纳米光子学中的测量、物理约束和机器学习。',
+    'How observations and physical constraints guide learning in astronomy, electronics and nanophotonics.': '天文观测、电子工程与纳米光子学中的测量、物理约束和机器学习。',
     'Precision Imaging and Medical AI | Zihao Wang': '精准成像与医疗人工智能 | 王子豪',
     'Research on image reconstruction, anatomical uncertainty and clinical interpretation.': '关于图像重建、解剖结构不确定性和临床解读的研究。',
     'Generative models | Zihao Wang': '生成模型 | 王子豪',

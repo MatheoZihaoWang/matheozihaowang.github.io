@@ -225,6 +225,11 @@ html[lang="zh-CN"] .gm-content[lang="zh-CN"] { display: block; }
 .gm-section { border-top: 1px solid $line; padding: 25px 0 28px; scroll-margin-top: 90px; }
 .gm-intro { border-top: 0; padding-top: 0; }
 .gm-section > h2 { margin-bottom: 16px; }
+.gm-section .sci-diagram { margin: 18px 0; }
+.sci-panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.sci-panels > div { border-top: 1px solid currentColor; padding-top: 8px; min-width: 0; }
+.sci-panels pre { background: transparent; color: inherit; border: 0; padding: 0; margin: 10px 0 0; font: 14px/1.16 ui-monospace, monospace; white-space: pre; overflow-x: auto; text-shadow: none; }
+@media (max-width: 700px) { .sci-panels { grid-template-columns: minmax(0, 1fr); } }
 .gm-kicker { margin-bottom: 8px !important; }
 .gm-pixel-figure { margin: 22px 0 28px !important; }
 .gm-pixel-figure > h3 { margin: 0 0 14px; }

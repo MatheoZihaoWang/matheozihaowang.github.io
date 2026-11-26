@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AI meets Sci&Engineering | Zihao Wang"
-description: "How observations and physical constraints guide learning in astronomy, dynamical systems, electronics and nanophotonics."
+description: "How observations and physical constraints guide learning in astronomy, electronics and nanophotonics."
 ---
 
 <div class="gm-overview-page">
@@ -15,24 +15,21 @@ description: "How observations and physical constraints guide learning in astron
       <p class="gm-kicker">Astronomy</p>
       <h2>Finding a faint disk in the glare of its star</h2>
       <p>Reference stars help astronomers estimate how much of an image comes from the central star. Choosing useful references requires distinguishing their images from those containing circumstellar disks. For POLARIS, we used archival polarized-light observations from the SPHERE/IRDIS instrument to build a benchmark for that distinction. Statistical methods, generative models and vision-language models can then be compared on the same observations.</p>
+      {% include sci_star.html left="Reference star" right="Star with a disk" caption="POLARIS classification task, shown schematically. Both fields have a bright core. The elongated band around the right-hand star represents scattered light from an inclined disk. The classifier must detect that extended structure even when the stellar glare dominates." %}
       <a href="https://arxiv.org/abs/2506.03511">POLARIS · Polarimetric imaging benchmark</a>
-    </section>
-    <section class="gm-section">
-      <p class="gm-kicker">Dynamical systems</p>
-      <h2>Which variables help explain a later change?</h2>
-      <p>In a system with many sensors, the number of possible directed links grows roughly with the square of the number of signals. Our SCDM method treats prediction of each variable as a separate task. The tasks share a temporal model, so training on a subset of variables also informs the rest. The model assigns scores to candidate links, which we can check against known interactions in simulated systems.</p>
-      <a href="https://neurips.cc/virtual/2026/poster/153991">SCDM · NeurIPS 2026</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">Electrical engineering</p>
       <h2>How much timing margin does a circuit leave?</h2>
       <p>Voltage fluctuations in a power distribution network can shift the timing of a digital signal. We used a genetic algorithm to search for decoupling capacitor configurations that control supply-induced jitter while keeping the component count low. At the receiver, we studied a complementary problem. A recurrent neural equalizer uses the history of a distorted waveform to recover the transmitted signal. The opening of the resulting eye diagram shows how much room the receiver has to distinguish bits in voltage and in time.</p>
+      {% include sci_eye.html left="More timing variation" right="Less timing variation" caption="Schematic eye diagrams overlay repeated bit intervals. Time runs left to right and voltage increases upward. When transitions arrive at different times, the crossings spread and the central opening narrows. Its width shows how much the sampling time can vary." %}
       <p><a href="https://doi.org/10.1109/TMTT.2021.3087188">Jitter-aware power distribution network design</a> · <a href="https://doi.org/10.1109/TSIPI.2023.3242855">Long short-term memory neural equalizer</a></p>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">Nanophotonics</p>
       <h2>Which optical structure should we simulate next?</h2>
       <p>Changing the geometry of a metasurface changes its response to light. Testing many geometries with an electromagnetic solver can be expensive. In our review of language models for nanophotonics, we examine two roles for learning in this search. A surrogate estimates the spectrum of a proposed structure. An agent can write simulation code, call a solver and use its output to revise the design. The solver gives each proposal a physical test.</p>
+      {% include sci_optics.html left="Candidate cross-section" right="Simulated response" caption="One design iteration, shown schematically. The raised features on the left form a periodic metasurface. The curve on the right shows an illustrative transmission spectrum, with wavelength increasing to the right. Comparing its peak position with a target wavelength guides the next change in geometry." %}
       <a href="https://doi.org/10.1117/1.AP.8.5.054003">Large language models for nanophotonics · Advanced Photonics</a>
     </section>
     <a href="/Research/">Back to research</a>
@@ -47,24 +44,21 @@ description: "How observations and physical constraints guide learning in astron
       <p class="gm-kicker">天文观测</p>
       <h2>怎样在明亮的恒星旁辨认暗弱的星周盘？</h2>
       <p>天文学家借助参考星估计中心恒星在图像中贡献了多少光。要选好参考图像，首先需要区分参考星图像与含有星周盘的图像。在 POLARIS 工作中，我们利用 SPHERE/IRDIS 仪器积累的偏振光观测建立了分类基准。统计方法、生成模型与视觉语言模型由此可以在同一批真实观测上进行比较。</p>
+      {% include sci_star.html left="参考星" right="带星周盘的恒星" caption="POLARIS 分类任务示意。两幅图都有明亮的中心，右图外围倾斜的环带表示星周盘散射的光。即使中心星光占主导，模型仍需辨认这种向外延展的结构。" %}
       <a href="https://arxiv.org/abs/2506.03511">POLARIS · 天文偏振成像基准</a>
-    </section>
-    <section class="gm-section">
-      <p class="gm-kicker">动力系统</p>
-      <h2>哪些变量有助于解释随后发生的变化？</h2>
-      <p>当多个传感器同时记录一个系统时，候选有向关系的数量随信号数量近似平方增长。我们的 SCDM 方法把每个变量的预测作为一项任务，让各项任务共享时序模型。这样，每轮训练即使只选取部分变量，也能为其余任务积累信息。模型最终为各条候选关系打分，我们可以在相互作用已知的模拟系统中检验这些判断。</p>
-      <a href="https://neurips.cc/virtual/2026/poster/153991">SCDM 时序因果发现 · NeurIPS 2026</a>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">电子工程</p>
       <h2>电路为正确判读一个比特留下了多少时序裕量？</h2>
       <p>配电网络中的电压波动会使数字信号的跳变时刻发生偏移。我们用遗传算法搜索去耦电容的配置，在控制电源诱发抖动的同时减少所需元件。在接收端，我们研究了另一个相关问题：如何利用失真波形的历史采样恢复发送信号？循环神经网络均衡器处理波形后，可以通过眼图开口的高度和宽度，分别评估接收器在电压和时间上判读比特的余量。</p>
+      {% include sci_eye.html left="跳变时刻较分散" right="跳变时刻较集中" caption="眼图原理示意。将多个比特周期的波形叠加，横向表示时间，纵向表示电压。跳变时刻越分散，交叉区域越宽，中央开口就越窄。开口宽度反映接收端选择采样时刻的余量。" %}
       <p><a href="https://doi.org/10.1109/TMTT.2021.3087188">考虑抖动的配电网络优化</a> · <a href="https://doi.org/10.1109/TSIPI.2023.3242855">基于长短期记忆网络的信号均衡器</a></p>
     </section>
     <section class="gm-section">
       <p class="gm-kicker">纳米光子学</p>
       <h2>下一个值得仿真的光学结构是什么？</h2>
       <p>改变超表面的几何结构，就会改变它对光的响应。用电磁求解器逐一检验大量候选结构，计算成本很高。我们在纳米光子学语言模型综述中梳理了两种用法：代理模型可以估计候选结构的光谱，智能体则可以编写仿真代码、调用求解器，并依据计算结果调整设计。这样，每次提出的新结构都可以接受物理仿真的检验。</p>
+      {% include sci_optics.html left="候选结构截面" right="仿真光谱" caption="一次设计迭代的示意。左图的凸起表示超表面的周期结构，右图示意透射率随波长的变化，波长向右递增。将透射峰所在的波长与目标波长比较，便可据此调整几何参数，再进行电磁仿真。" %}
       <a href="https://doi.org/10.1117/1.AP.8.5.054003">纳米光子学中的大语言模型综述 · Advanced Photonics</a>
     </section>
     <a href="/Research/">返回研究方向</a>
