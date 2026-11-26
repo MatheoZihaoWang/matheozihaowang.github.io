@@ -138,22 +138,18 @@ categories:
     <div class="support-grid" aria-label="Sponsors and supporters">
       <a class="support-mark" href="https://www.nsf.gov/" aria-label="U.S. National Science Foundation">
         <span class="pixel-logo" data-pixel-mark="nsf" aria-hidden="true"></span>
-        <span class="support-label">U.S. National Science Foundation</span>
       </a>
       <a class="support-mark" href="https://nairrpilot.org/" aria-label="National Artificial Intelligence Research Resource Pilot">
         <span class="pixel-logo" data-pixel-mark="nairr" aria-hidden="true"></span>
-        <span class="support-label">NAIRR Pilot</span>
       </a>
       <a class="support-mark" href="https://www.nih.gov/" aria-label="National Institutes of Health">
         <span class="pixel-logo" data-pixel-mark="nih" aria-hidden="true"></span>
-        <span class="support-label">National Institutes of Health</span>
       </a>
       <a class="support-mark" href="https://astecindustries.com/" aria-label="Astec Industries">
         <span class="pixel-logo" data-pixel-mark="astec" aria-hidden="true"></span>
-        <span class="support-label">Astec Industries</span>
       </a>
     </div>
   </div>
 </section>
 
-<script src="/assets/themes/lab/js/sponsor-pixels.js?v=20261125-1" defer></script>
+<script src="/assets/themes/lab/js/sponsor-pixels.js?v=20261125-2" defer></script>

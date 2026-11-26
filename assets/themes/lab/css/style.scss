@@ -201,15 +201,12 @@ html[lang="zh-CN"] body { font-family: "DotGothic16", "PingFang SC", "Microsoft 
 .thrust-panel p { margin: 0 0 16px; line-height: 1.65; }
 .thrust-learn-more { margin-top: 3px; }
 
-// Code-drawn dot-matrix acknowledgements. No raster or external logo assets.
-.support-grid { border-top: 1px solid $line; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.support-mark { align-items: center; border-bottom: 1px solid $line; border-right: 1px solid $line; color: $ink; display: flex; flex-direction: column; gap: 17px; justify-content: center; min-height: 142px; padding: 24px 18px 20px; text-align: center; }
-.support-mark:nth-child(2n) { border-right: 0; }
-.support-mark:hover, .support-mark:focus-visible { background: rgba(0, 0, 0, .045); color: $ink; outline: 0; }
-.pixel-logo { color: currentColor; display: grid; gap: 1px; grid-template-columns: repeat(var(--pixel-columns), 3px); grid-template-rows: repeat(var(--pixel-rows), 3px); justify-content: center; min-height: 59px; }
-.pixel-logo__cell { display: block; height: 3px; width: 3px; }
-.pixel-logo__cell.is-on { background: currentColor; box-shadow: 0 0 0 .25px currentColor; }
-.support-label { font-size: 12px; font-weight: 800; letter-spacing: .055em; line-height: 1.35; }
+// Four optically sized marks share a baseline and inherit the display ink.
+.support-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(4px, 2vw, 24px); max-width: 520px; }
+.support-mark { color: inherit; display: grid; place-items: center; min-width: 0; min-height: 48px; }
+.support-mark:focus-visible { outline: 1px solid currentColor; outline-offset: 2px; }
+.pixel-logo { display: grid; place-items: center; width: 100%; }
+.pixel-logo svg { display: block; max-width: 100%; height: auto; }
 
 // Generative-models long-form overview. It inherits the main site shell,
 // navigation, RLCD surface, language state, and inverse display mode.
@@ -467,8 +464,6 @@ html[data-theme="dark"] .gm-pixel-figure img { filter: invert(1) brightness(.82)
 html[data-theme="dark"] .support-mark { color: $dark-ink; }
 html[data-theme="dark"] .support-mark:hover,
 html[data-theme="dark"] .support-mark:focus-visible { background: rgba(255, 255, 255, .045); color: $dark-strong; }
-html[data-theme="dark"] .support-grid,
-html[data-theme="dark"] .support-mark { border-color: $dark-line; }
 
 @media (max-width: 720px) {
   :root { --content-font-size: 13px; }
@@ -494,8 +489,6 @@ html[data-theme="dark"] .support-mark { border-color: $dark-line; }
   .section-kicker { margin-bottom: 4px; }
   .research-areas { gap: 35px; padding: 12px 0 29px; }
   .research-areas h2 { font-size: calc(var(--content-font-size) + 2px); }
-  .support-grid { grid-template-columns: 1fr; }
-  .support-mark { border-right: 0; min-height: 126px; }
   .publication-item { grid-template-columns: 50px 1fr; gap: 12px; }
   .publication-item h3 { font-size: var(--content-font-size); }
   .contact-grid { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 35px; }
